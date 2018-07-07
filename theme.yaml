@@ -1,0 +1,7 @@
+name: UI3kitify
+description: 'Based on UI3kit Starter development template for building UIkit v3 themed sites.'
+author: Fosphatic
+homepage: 'https://octobercms.com/theme/castus-ui3kit'
+code: UI3kitify
+
+form: fields.yaml

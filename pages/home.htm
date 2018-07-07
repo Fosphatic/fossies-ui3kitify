@@ -1,0 +1,135 @@
+title = "Home"
+url = "/"
+layout = "home"
+is_hidden = 0
+==
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }} | {{ this.theme.site_name }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="{{ this.theme.brand_color }}">
+    <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">
+    <link rel="stylesheet" href="{{ ('assets/css/uikit3.min.css')|theme }}?v={{ this.theme.version }}">
+</head>
+<body class="uk-height-viewport">
+<div class="uk-section-header">
+    <div class="uk-offcanvas-content">
+    <header class="uk-navbar-container">
+    <div class="uk-position-relative uk-visible-toggle hero-position" uk-slideshow="autoplay: true; pause-on-hover: false">
+    <div class="hero-nav" uk-sticky="top: 100">
+            <nav class="hero-navbar uk-width-1-1@s uk-width-1-1@m uk-width-4-5@m" uk-navbar>
+                <div class="uk-navbar-left uk-flex-left">
+
+                    <a href="#"><img class="uk-navbar-item uk-logo" src="{{ 'assets/images/theme/logo.svg'|theme }}" alt=""></img></a>
+
+                    
+                </div>
+            <div class="uk-navbar-right uk-flex-right uk-width-auto@s uk-width-auto@m">
+                <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+            </div>
+
+        </div>
+        
+        <ul class="uk-slideshow-items hero-slideshow">
+        <li>
+            <img src="{{ 'assets/images/theme/photo.jpg'|theme }}" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
+                <h2 uk-slideshow-parallax="y: -150,0,0; opacity: 1,1,0">Heading</h2>
+                <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="{{ 'assets/images/theme/dark.jpg'|theme }}" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
+                <h2 uk-slideshow-parallax="y: -150,0,0; opacity: 1,1,0">Heading</h2>
+                <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="{{ 'assets/images/theme/light.jpg'|theme }}" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
+                <h2 uk-slideshow-parallax="y: -150,0,0; opacity: 1,1,0">UI3kitify Theme</h2>
+                <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+    <div class="texture-overlay-hero"></div>
+        <div class="uk-container"></div>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                <div class="uk-position-bottom-center  uk-position-large">
+                <ul class="uk-dotnav">
+                    <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                    <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                    <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                    </ul>
+                </div>
+    </div>
+</div>
+        
+</div>
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            </ul>
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+    </div>
+</div>
+        <!-- Content -->
+        <home id="layout-features">
+            {% partial 'site/home' %}
+        </home>
+        
+        <!-- Features -->
+        <features id="layout-features">
+            {% partial 'site/features' %}
+        </features>
+        
+        <!-- Showcase -->
+        <showcase id="layout-showcase">
+            {% partial 'site/showcase' %}
+        </showcase>
+        
+         <!-- Projects -->
+        <projects id="layout-projects">
+            {% partial 'site/projects' %}
+        </projects>
+        
+        <!-- Footer -->
+        <bottom id="layout-bottom">
+            {% partial 'site/bottom' %}
+        </bottom>
+                        
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+        
+<script src="{{ ('assets/js/uikit3.min.js')|theme }}?v={{ this.theme.version }}"></script>
+<script src="{{ ('assets/js/uikit3-icons.min.js')|theme }}?v={{ this.theme.version }}"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+title = "blog"
+url = "/blog"
+layout = "blog"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 1
+categoryPage = "blog"
+==
+{% component 'blogPosts' %}
+{% component 'blogCategories' %}
