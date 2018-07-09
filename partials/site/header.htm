@@ -1,3 +1,7 @@
+[staticMenu kitifyMenu]
+code = "main-menu"
+
+[viewBag]
 ==
 <div class="uk-offcanvas-content">
 
@@ -46,17 +50,8 @@
                         <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
                     </a>
             </div>
-            
-            
-            
-            <ul class="uk-nav uk-nav-default">
-                <li class="uk-nav-header">Main Menu</li>
-                <li><a href="/#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="/blog"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Blog</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-            </ul>
+            <h3>Main Menu</h3>    
+            {% component 'kitifyMenu' %}
 
             <h3>Title</h3>
 

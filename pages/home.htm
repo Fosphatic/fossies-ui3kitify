@@ -1,4 +1,4 @@
-title = "Home"
+title = "home"
 url = "/"
 layout = "home"
 is_hidden = 0
@@ -6,6 +6,9 @@ child_of = "mey_no_parent"
 hide_crumb = 0
 remove_crumb_trail = 0
 crumb_disabled = 0
+
+[staticMenu kitifyMenu]
+code = "main-menu"
 ==
 <html lang="de">
 <head>
@@ -88,17 +91,9 @@ crumb_disabled = 0
                         <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
                     </a>
             </div>
+                <h3>Main Menu</h3>    
+                {% component 'kitifyMenu' %}
             
-            
-            
-            <ul class="uk-nav uk-nav-default">
-                <li class="uk-nav-header">Main Menu</li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="/blog"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Blog</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-            </ul>
 
             <h3>Title</h3>
 

@@ -9293,3 +9293,11 @@ blockquote p {
     color: #0f7ae5 !important;
     border: 1px solid !important;
 }
+.uk-nav-default {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.uk-nav-default a:hover {
+    color: #39f !important;
+    text-decoration: none;
+}
