@@ -9188,6 +9188,8 @@ blockquote p {
 }
 .uk-navbar-container {
     min-height: 120px;
+    border-bottom: 1px solid rgb(0,0,0, .1);
+    background: rgb(255,255,255, .95) !important;
 }
 .tm-article-date {
 
@@ -9242,4 +9244,15 @@ blockquote p {
 }
 *+.uk-article-divider {
 	margin-top:30px
+}
+.hero-position .uk-slidenav {
+    color: rgb(51,153,255, .98) !important;
+    border: 2px solid;
+}
+.hero-position .uk-slidenav:hover {
+    color: rgb(0,0,0,0.8) !important;
+}
+#tm-bottom, #features {
+    border-bottom: 1px solid rgb(0,0,0, 0.1);
+    border-top: 1px solid rgb(0,0,0, 0.1);
 }
