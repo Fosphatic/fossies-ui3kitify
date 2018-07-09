@@ -1,6 +1,6 @@
 description = "Blog Post Item"
 
-[blogPost]
+[blogPost postView]
 slug = "{{ :slug }}"
 categoryPage = "Blog/category"
 
@@ -17,9 +17,10 @@ categoryPage = "Blog/blog"
                     
                 <ul class="uk-list uk-list-space">
                     <li>
-                    {% component 'blogPost' %}
+                    {% component 'postView' %}
                     </li>
-                <ul>  
+                <ul>
+                
             
         </div>
         
