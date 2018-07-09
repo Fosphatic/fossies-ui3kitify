@@ -1,16 +1,71 @@
 ==
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ this.page.title }} | {{ this.theme.site_name }}</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
-    <meta name="robots" content="noindex,nofollow">
-    <meta name="theme-color" content="{{ this.theme.brand_color }}">
-    <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">
-    <link rel="stylesheet" href="{{ ('assets/css/uikit3.min.css')|theme }}?v={{ this.theme.version }}">
-</head>
-<body class="uk-height-viewport">
-<div class="uk-section-header">
-    <div class="uk-offcanvas-content">
-    <header class="uk-navbar-container">
+<div class="uk-offcanvas-content">
+
+    <header class="uk-sticky-fixed uk-navbar-container" uk-sticky>
+        <div class="uk-container">
+            <nav uk-navbar>
+                <div class="uk-navbar-left">
+
+                    <a href="/#"><img class="uk-navbar-item uk-logo" src="{{ 'assets/images/theme/logo.svg'|theme }}" alt=""></img></a>
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li>
+                            <a href="#">Parent</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li class="uk-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-panel uk-text-center">
+                    <a href="/#">
+                        <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
+                    </a>
+            </div>
+            
+            
+            
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header">Main Menu</li>
+                <li><a href="/#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="/blog"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Blog</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            </ul>
+
+            <h3>Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+    </div>

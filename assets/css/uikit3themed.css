@@ -216,7 +216,7 @@ h6, .uk-h6 {
   margin: 0 0 20px 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
-  color: #39f;
+  color: #39f !important;
   text-transform: none; }
 
 /* Add margin if adjacent element */
@@ -8967,20 +8967,21 @@ iframe.uk-cover {
     border: 0px solid rgba(255, 255, 255);
 }
 .projects-slider .uk-dotnav > * :focus, .uk-dotnav > * :hover {
-    background-color: rgba(102,102,102,.6);
+    background-color: rgba(102,102,102,.6) !important;
     border: 0px solid rgba(255, 255, 255) !important;
     outline: 0;
 }
 .uk-dotnav > .uk-active > * {
     background-color: rgba(51, 153, 255,.6) !important;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
 }
 .uk-dotnav > * > * {
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(102,102,102,.2) !important;
 }
 .uk-dotnav > * > :focus, .uk-dotnav > * > :hover {
-    background-color: rgba(102,102,102,.6);
-    border: 1px solid rgba(51, 153, 255, 0.8);
+    background-color: rgba(102,102,102,.6) !important;
+    border: 1px solid rgba(51, 153, 255, 0.8) !important;
     outline: 0;
 }
 .uk-logo {
@@ -9094,7 +9095,7 @@ iframe.uk-cover {
     margin-top: 10% !important;
 }
 .uk-contrast h2, blockquote {
-    color: #FFF;
+    color: #FFF !important;
 }
 blockquote .avatar {
     display: inline-block;
@@ -9184,4 +9185,61 @@ blockquote p {
 }
 #layout-bottom  .uk-subnav.uk-subnav-line.uk-text-bold {
     line-height: 40px
+}
+.uk-navbar-container {
+    min-height: 120px;
+}
+.tm-article-date {
+
+    width: 40px;
+    background: #39f;
+    color: #FFF;
+    height: 40px;
+    font-size: 15pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+
+.uk-article:before,.uk-article:after {
+	content:"";
+	display:table
+}
+.uk-article:after {
+	clear:both
+}
+.uk-article>:last-child {
+	margin-bottom:0
+}
+.uk-article+.uk-article {
+	margin-top:30px
+}
+.uk-article-title {
+	font-size:22px;
+	line-height:28px;
+	font-weight:400;
+	text-transform:none
+}
+.uk-article-title a {
+	color:inherit;
+	text-decoration:none
+}
+.uk-article-meta {
+	font-size:12px;
+	line-height:18px;
+	color:#ccc
+}
+.uk-article-lead {
+	color:#999;
+	font-size:18px;
+	line-height:24px;
+	font-weight:400
+}
+.uk-article-divider {
+	margin-bottom:30px;
+	border-color:rgba(120,121,122,0.15)
+}
+*+.uk-article-divider {
+	margin-top:30px
 }

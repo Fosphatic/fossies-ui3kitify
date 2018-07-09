@@ -1,5 +1,5 @@
-# UI3kitify Theme
-UI3kitify Theme template based on [UIkit v3] (https://getuikit.com/) Theme UI3kit template for [OctoberCMS](https://octobercms.com/) sites.
+# UI3kit
+Starter development template for building [UIkit v3](https://getuikit.com/) themed [OctoberCMS](https://octobercms.com/) sites.
 
 Includes:
 - latest UIkit v3 (beta) [source from official repository](https://github.com/uikit/uikit)
@@ -15,6 +15,37 @@ or with the following command-line instructions inside *project root*:
 php artisan theme:install castus.ui3kit ui3kit
 php artisan theme:use ui3kit
 ```
+
+## One-time Development Environment Setup
+Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version required).
+Run the following command-line instructions inside *theme root*:
+```
+npm install --global gulp-cli
+npm i
+```
+Alternative NPM-compatible package manager [Yarn](https://yarnpkg.com/en/) could be used:
+```
+yarn
+```
+Integrating build process into OctoberCMS project is easy - copy (or merge into existing) files into *project root*:
+```
+gulpfile.js
+package.json
+```
+Adjust `paths.root` configuration variable to **themes/castus-ui3kit/** and start using command-line tasks from *project root*. 
+
+## Using and Editing
+Check [intro page](https://github.com/Eoler/oc-ui3kit-theme/blob/master/pages/ui3kit.htm)
+for example HTML page structure and mandatory includes.
+Development changes can be automated with command-line instruction inside *theme root*:
+```
+gulp watch
+```
+Build versioned, optimized, minified, autoprefixed assets with command-line instruction inside *theme root*:
+```
+gulp upbuild --production
+```
+
 ## Customizing UIkit
 Global framework/theme styling parameters are overridable in the following SCSS files:
 - [assets/scss/uikit3 SCSS](https://github.com/Eoler/oc-ui3kit-theme/blob/master/assets/scss/uikit3.scss)

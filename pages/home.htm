@@ -3,7 +3,6 @@ url = "/"
 layout = "home"
 is_hidden = 0
 ==
-<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +18,7 @@ is_hidden = 0
     <div class="uk-offcanvas-content">
     <header class="uk-navbar-container">
     <div class="uk-position-relative uk-visible-toggle hero-position" uk-slideshow="autoplay: true; pause-on-hover: false">
-    <div class="hero-nav" uk-sticky="top: 100">
+    <div class="hero-nav">
             <nav class="hero-navbar uk-width-1-1@s uk-width-1-1@m uk-width-4-5@m" uk-navbar>
                 <div class="uk-navbar-left uk-flex-left">
 
@@ -34,13 +33,16 @@ is_hidden = 0
         </div>
         
         <ul class="uk-slideshow-items hero-slideshow">
+        
         <li>
+            <div class="texture-overlay-hero"></div>
             <img src="{{ 'assets/images/theme/photo.jpg'|theme }}" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
                 <h2 uk-slideshow-parallax="y: -150,0,0; opacity: 1,1,0">Heading</h2>
                 <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
+        
         <li>
             <img src="{{ 'assets/images/theme/dark.jpg'|theme }}" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
@@ -48,6 +50,7 @@ is_hidden = 0
                 <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
             </div>
         </li>
+       
         <li>
             <img src="{{ 'assets/images/theme/light.jpg'|theme }}" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
@@ -56,8 +59,8 @@ is_hidden = 0
             </div>
         </li>
     </ul>
-    <div class="texture-overlay-hero"></div>
-        <div class="uk-container"></div>
+    
+    <div class="texture-overlay-hero"></div>    
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 <div class="uk-position-bottom-center  uk-position-large">
@@ -76,18 +79,19 @@ is_hidden = 0
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
+            <div class="uk-panel uk-text-center">
+                    <a href="/#">
+                        <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
+                    </a>
+            </div>
+            
+            
+            
             <ul class="uk-nav uk-nav-default">
-                <li class="uk-active"><a href="#">Active</a></li>
-                <li class="uk-parent">
-                    <a href="#">Parent</a>
-                    <ul class="uk-nav-sub">
-                        <li><a href="#">Sub item</a></li>
-                        <li><a href="#">Sub item</a></li>
-                    </ul>
-                </li>
-                <li class="uk-nav-header">Header</li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                <li class="uk-nav-header">Main Menu</li>
+                <li><a href="/#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Home</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="/blog"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> Blog</a></li>
                 <li class="uk-nav-divider"></li>
                 <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
             </ul>
