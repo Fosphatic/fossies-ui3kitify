@@ -10,3 +10,5 @@
     - Added support for the breadcrumbs plugin in the blog view with templating
 1.0.5:
     - UIKit Modal examples integration on starting home page, small visual fixes and additional stylings added
+1.0.6:
+    - Corrected the URL leading to the UIKitify theme in october CMS Themes Page
