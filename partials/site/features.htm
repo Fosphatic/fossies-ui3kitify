@@ -10,11 +10,24 @@
                         </div>
                         <div class="feature-content">
                             <h2>Responsive</h2>
-                            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
-                            <a href="#" class="uk-button uk-button-primary">Read More</a>
+                            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, UIKit Version 3.</p>
+                            <a class="uk-button uk-button-primary" href="#modal-responsive" uk-toggle>Read More</a>
                         </div>
                     </div>
             </div>
+                    <!-- This is the Full Screen modal. -->
+                    <div id="modal-responsive" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover" style="background-image: url('{{ 'assets/images/theme/responsive.jpg'|theme }}');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1>Responsive Design</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             <div>
                     <div class="uk-card uk-card-default uk-card-body">
                         <div class="feature-icon uk-text-center uk-container-center">
@@ -23,7 +36,15 @@
                         <div class="feature-content">
                             <h2>Multi-Purpose</h2>
                             <p>Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.</p>
-                            <a href="#" class="uk-button uk-button-primary">Read More</a>
+                            <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #modal-multi-purpose">Read More</button>
+                        </div>
+                    </div>
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-multi-purpose" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title">Multi-Purpose</h2>
+                            <p>Perfect Theme if you run your own start-up, product or service. UI3kitify can showcase your business converting your visits to income.</p><p>This Theme comes with fancy one pager as home screen and offer simple stylish blog layout for multi-purpose setup.</p><p>Handcrafted, extendable as it is based on UIKit - A lightweight and modular front-end framework. When simplicity and usability aided by design for your personal needs.</p>
                         </div>
                     </div>
             </div>
@@ -35,7 +56,7 @@
                         <div class="feature-content">
                             <h2>Absolutely Free</h2>
                             <p>As aways, download UI3kitify for free exclusively for free. If you love UI3kitify and want to thank me, simply buy me a beer or two.</p>
-                            <a href="#" class="uk-button uk-button-primary">Read More</a>
+                            <a href="https://octobercms.com/theme/svensuchan-ui3kitify" class="uk-button uk-button-primary" target="_blank">Read More</a>
                         </div>
                     </div>
             </div>

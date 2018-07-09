@@ -8858,7 +8858,8 @@ iframe.uk-cover {
   height: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
-  overflow: hidden !important; }
+  overflow: hidden !important; 
+  z-index: -1; }
 
 /*
  * Invisible
@@ -9286,4 +9287,9 @@ blockquote p {
 }
 .uk-breadcrumb > :last-child > *:hover {
     color: #000 !important;
+}
+.uk-button-primary:focus, .uk-button-primary:hover {
+    background-color: #FFF !important;
+    color: #0f7ae5 !important;
+    border: 1px solid !important;
 }
