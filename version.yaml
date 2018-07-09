@@ -6,3 +6,5 @@
     - Changed the blog single post view slightly
 1.0.3:
     - Small fixes and visual changes, sticky behaviour of the navbar in blog view changed
+1.0.4:
+    - Added support for the breadcrumbs plugin in the blog view with templating

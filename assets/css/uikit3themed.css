@@ -9256,3 +9256,34 @@ blockquote p {
     border-bottom: 1px solid rgb(0,0,0, 0.1);
     border-top: 1px solid rgb(0,0,0, 0.1);
 }
+#breadcrumbs {
+    border-top: 1px solid rgb(0,0,0, .9);
+    border-bottom: 1px solid rgb(0,0,0);
+}
+.uk-breadcrumb {
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 12pt;
+    font-size: 15pt;
+}
+.uk-breadcrumb .uk-active:hover {
+    text-transform: uppercase;
+    color: #000 !important;
+    font-size: 15pt;
+}
+.tm-subnav-wrapper a {
+    color: #000;
+    font-size: 15pt;
+}
+.uk-breadcrumb > * > :hover, .uk-breadcrumb > * > :focus {
+    color: #FFF !important;
+}
+.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+    color: #FFF;
+}
+.uk-breadcrumb > :last-child > * {
+    color: #FFF;
+}
+.uk-breadcrumb > :last-child > *:hover {
+    color: #000 !important;
+}

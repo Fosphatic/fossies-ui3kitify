@@ -14,13 +14,15 @@ categoryPage = "Blog/category"
 ==
 <section class="uk-section uk-article uk-preserve-color" id="blog">
     <div class="uk-container">
-        <div class="uk-grid-match" uk-scrollspy="cls:uk-animation-fade; delay: 250; repeat: true" uk-grid uk-margin-medium>
+        <div class="uk-grid-match" uk-grid uk-margin-medium>
             <div class="tm-article-content uk-position-relative uk-width-2-3@m uk-width-expand@s">
+                <div class="tm-blog-post-wrapper">
                 <ul class="uk-list uk-list-space">
                     <li> 
                     {% component 'postsList' %}
                     </li>
-                </ul>  
+                </ul>
+                </div>
             </div>
             <div class="uk-width-auto@s">
                 <aside class="uk-width-medium-1-1">

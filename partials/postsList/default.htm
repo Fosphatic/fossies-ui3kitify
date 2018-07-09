@@ -2,9 +2,10 @@
 {% set posts = __SELF__.posts %}
 
 <ul class="post-list">
+    
     {% for post in posts %}
         <li>
-
+            <div class="tm-article-wrapper" uk-scrollspy="cls:uk-animation-fade; delay: 500 repeat:true">
             <div class="tm-article-date uk-margin-medium uk-text-center">
               <span class="tm-article-date-day uk-column-span">{{ post.published_at|date('M') }}</span>
               <span class="tm-article-date-month uk-column-span">{{ post.published_at|date('Y') }}</span>
@@ -30,15 +31,18 @@
 
             <p class="excerpt">{{ post.summary|raw }}</p>
             <div class="uk-margin-medium">
-            <a href="{{ post.url }}" class="uk-button uk-button-primary">Read More <i class="fa fa-caret-right" aria-hidden=“true"></i></a>
+            <a href="{{ post.url }}" class="uk-button uk-button-primary">Read More <span uk-icon="icon: chevron-right"></span></a>
             <hr>
             </div>
-        </li>
-        
+            </div>
+        </li> 
     {% else %}
         <li class="no-data">{{ noPostsMessage }}</li>
+        
     {% endfor %}
+    
 </ul>
+
 
 {% if posts.lastPage > 1 %}
     <ul class="pagination">

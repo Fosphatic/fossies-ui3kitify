@@ -1,9 +1,11 @@
+==
 {% set post = __SELF__.post %}
+<div class="tm-article-wrapper" uk-scrollspy="cls:uk-animation-fade; delay: 500 repeat:true">
 <div class="tm-article-date uk-margin-medium uk-text-center">
   <span class="tm-article-date-day uk-column-span">{{ post.published_at|date('M') }}</span>
   <span class="tm-article-date-month uk-column-span">{{ post.published_at|date('Y') }}</span>
 </div>
-<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<h3 id="crumb-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 {% if post.featured_images.count %}
     <div class="featured-images text-center">
         {% for image in post.featured_images %}
@@ -29,3 +31,4 @@
     {% endif %}
     on {{ post.published_at|date('M d, Y') }}
 </p>
+</div>
