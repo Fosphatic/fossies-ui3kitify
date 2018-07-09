@@ -12,3 +12,5 @@
     - UIKit Modal examples integration on starting home page, small visual fixes and additional stylings added
 1.0.6:
     - Corrected the URL leading to the UIKitify theme in october CMS Themes Page
+1.0.7:
+    - Added support for the Page Plugin and dynamic main menu with additional styling
