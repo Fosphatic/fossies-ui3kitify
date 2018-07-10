@@ -7,36 +7,27 @@ code = "main-menu"
 
     <header class="uk-navbar-container" uk-sticky="animation: uk-animation-slide-top ; show-on-up:true">
         <div class="uk-container">
-            <nav uk-navbar>
+            <nav class="uk-navbar-container" uk-navbar>
                 <div class="uk-navbar-left">
 
-                    <a href="/uikitify/#"><img class="uk-navbar-item uk-logo" src="{{ 'assets/images/theme/logo.svg'|theme }}" alt=""></img></a>
-
-                    <ul class="uk-navbar-nav uk-visible@s">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <ul class="uk-nav-sub">
-                                            <li><a href="#">Sub item</a></li>
-                                            <li><a href="#">Sub item</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-
+                    <a href="/#"><img class="uk-navbar-item uk-logo" src="{{ 'assets/images/theme/logo.svg'|theme }}" alt=""></img></a>
+                
                 </div>
-                <div class="uk-navbar-right">
+                    <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@s">
+                        {% component 'kitifyMenu' %}
+                    </ul>
+                    </div>
+
+                
+                
+                
+                <div class="uk-navbar-right uk-hidden@s">
                     <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
                 </div>
+               
+                
+                
             </nav>
         </div>
     </header>
@@ -50,8 +41,11 @@ code = "main-menu"
                         <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
                     </a>
             </div>
+            
+            <ul class="uk-nav uk-nav-default">
             <h3>Main Menu</h3>    
             {% component 'kitifyMenu' %}
+            </ul>
 
             <h3>Title</h3>
 

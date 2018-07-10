@@ -5,10 +5,12 @@
         {% if item.url %}
             <div class="uk-animation-toggle">
             <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
-                <div class="uk-animation-slide-right-small"><span class="uk-margin-small-right" uk-icon="icon: chevron-right"></span> {{ item.title }}</div>
+                <div class="uk-animation-slide-top-small mobile-nav-menu"><span class="uk-margin-small-right"> </span> {{ item.title }} <span class="uk-margin-small-right"> </span></div>
             </a>
             </div>
+            
             <li class="uk-nav-divider"></li>
+            
         {% else %}
             {{ item.title }}
         {% endif %}

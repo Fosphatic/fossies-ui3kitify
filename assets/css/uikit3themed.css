@@ -9276,6 +9276,14 @@ blockquote p {
     color: #000;
     font-size: 15pt;
 }
+@media (max-width:640px)  {
+    .uk-breadcrumb, .uk-breadcrumb .uk-active:hover, .tm-subnav-wrapper a {
+        font-size: 10pt;
+    }
+}
+
+
+
 .uk-breadcrumb > * > :hover, .uk-breadcrumb > * > :focus {
     color: #FFF !important;
 }
@@ -9300,4 +9308,17 @@ blockquote p {
 .uk-nav-default a:hover {
     color: #39f !important;
     text-decoration: none;
+}
+.mobile-nav-menu {
+    line-height: 30pt;
+}
+.uk-navbar-right {
+     font-size: 15pt;   
+}
+.uk-navbar-right a:hover{
+     text-decoration: none;   
+}
+a:hover{
+     text-decoration: none !important;
+     color: #666;
 }

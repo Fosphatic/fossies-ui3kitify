@@ -1,7 +1,5 @@
 [viewBag]
 ==
 {% if __SELF__.menuItems %}
-    <ul class="uk-nav uk-nav-default">
         <li>{% partial __SELF__ ~ "::items" items=__SELF__.menuItems %}</li>
-    </ul>
 {% endif %}
