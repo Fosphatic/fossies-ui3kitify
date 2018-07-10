@@ -1,5 +1,7 @@
 description = "Blog Post Item"
 
+[viewBag]
+
 [blogPost postView]
 slug = "{{ :slug }}"
 categoryPage = "Blog/category"
@@ -12,38 +14,24 @@ categoryPage = "Blog/category"
 <section class="uk-section uk-article uk-preserve-color" id="blog">
     <div class="uk-container">
         <div class="uk-grid-match" uk-scrollspy="cls:uk-animation-fade; delay: 250; repeat: true" uk-grid uk-margin-medium>
-            
-                <div class="tm-article-content uk-position-relative uk-width-2-3@m uk-width-expand@s">
-                    
+            <div class="tm-article-content uk-position-relative uk-width-2-3@m uk-width-expand@s">
                 <ul class="uk-list uk-list-space">
                     <li>
                     {% component 'postView' %}
                     </li>
                 <ul>
-                
-            
-        </div>
-        
+            </div>
             
             <div class="uk-width-auto@s">
             <aside class="uk-width-medium-1-1">
                 <div class="uk-panel uk-panel-secondary">
-                    <h3>Categories:</h3>
-                    <ul class="uk-list uk-list-space">
-                    <li>{% component 'blogCategories' %}</li>
-                    <ul>
+                        <!-- Sidebar -->
+                    <sidebar id="layout-sidebar">
+                        {% partial 'blog/sidebar' %}
+                    </sidebar>
                 </div>
             </aside>
           </div>
-            
-            
-                    
-         
-           
-         
-         
         </div>
-        
-            
     </div>
 </section>

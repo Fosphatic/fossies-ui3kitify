@@ -9,3 +9,4 @@ form: fields.yaml
 require:
     - Rainlab.Pages
     - Mey.Breadcrumbs
+    - Bedard.BlogTags

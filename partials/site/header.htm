@@ -1,7 +1,7 @@
+[viewBag]
+
 [staticMenu kitifyMenu]
 code = "main-menu"
-
-[viewBag]
 ==
 <div class="uk-offcanvas-content">
 
@@ -9,29 +9,28 @@ code = "main-menu"
         <div class="uk-container">
             <nav uk-navbar>
                 <div class="uk-navbar-left">
+                    <div class="tm-logo-container">
+                        <a href="/#"><img class="uk-navbar-item uk-logo"></img></a>
+                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 168 155" style="enable-background:new 0 0 168 155;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path class="tm-logo-path tm-logo-letter1"d="M117.39,33.3L93.3,47.9l27.8,15.82v41.49l-37.32,20.74L47.08,105.2V73.04L23,60.65v58.9l59.91,35.17 L145,119.55V49.19L117.39,33.3z"/>
+                         </g>
+                         <g>
+                             <polygon class="tm-logo-path tm-logo-letter2" points="106.23,27.5 82.91,14 58.57,29.06 82.22,42.06 "/>
+                         </g>
+                        </g>
+                        </svg>                       
+                    </div>
 
-                    <a href="/uikitify/#"><img class="uk-navbar-item uk-logo" src="{{ 'assets/images/theme/logo.svg'|theme }}" alt=""></img></a>
 
-                    <ul class="uk-navbar-nav uk-visible@s">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li class="uk-parent">
-                                        <a href="#">Parent</a>
-                                        <ul class="uk-nav-sub">
-                                            <li><a href="#">Sub item</a></li>
-                                            <li><a href="#">Sub item</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                    
+                            <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav uk-visible@s">
+                            <li>{% component 'kitifyMenu' %}</li>
+                            </ul>
                             </div>
-                        </li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
+                    
 
                 </div>
                 <div class="uk-navbar-right">
@@ -40,22 +39,24 @@ code = "main-menu"
             </nav>
         </div>
     </header>
-    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true; mode: push">
         <div class="uk-offcanvas-bar">
 
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
 
             <div class="uk-panel uk-text-center">
-                    <a href="/#">
-                        <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
-                    </a>
+                    <a href="/#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
             </div>
-            <h3>Main Menu</h3>    
-            {% component 'kitifyMenu' %}
-
-            <h3>Title</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+            
+            <div class="uk-panel uk-panel-box uk-panel-header tm-offcanvas-menu uk-tile uk-tile-primary uk-padding-large uk-position-center">
+            <div class="uk-width-1-1@s">
+            <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+            <h3 class="uk-panel-title">Main Menu</h3>    
+            <li>{% component 'kitifyMenu' %}<li>
+            </ul>
+            
+            </div>
+            </div>
+            
         </div>
     </div>
