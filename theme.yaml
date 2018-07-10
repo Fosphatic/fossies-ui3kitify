@@ -5,3 +5,7 @@ homepage: 'https://octobercms.com/theme/svensuchan-ui3kitify'
 code: UI3kitify
 
 form: fields.yaml
+
+require:
+    - Rainlab.Pages
+    - Mey.Breadcrumbs
