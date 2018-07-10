@@ -3,7 +3,7 @@
 {% for item in items if not item.viewBag.isHidden %}
     <li role="presentation" class="{{ item.isActive ? 'active' : '' }} {{ item.isChildActive ? 'child-active' : '' }} {{ item.viewBag.cssClass }}">
         {% if item.url %}
-            <div class="uk-animation-toggle">
+            <div class="tm-nav-item-wrapper">
             <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
                 <div class="tm-nav-menu"><span class="uk-margin-medium-right"></span> {{ item.title }}</div>
             </a>
