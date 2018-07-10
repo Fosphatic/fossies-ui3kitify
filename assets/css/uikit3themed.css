@@ -9350,12 +9350,23 @@ blockquote p {
     height: auto;
     }
 }
-
+@media (min-width:768px)  {
+#Layer_1 {
+    width: 130px;
+    height: auto;
+    }
+}
 @media (min-width: 768px) and (max-width:1024px)  {
     .tm-offcanvas-menu  {
     width: 40vw;
     color: #fff;
     margin-top: 1vh;
+    }
+}
+@media (min-width: 1280px) {
+    .tm-offcanvas-menu  {
+    width: 20vw;
+    color: #fff;
     }
 }
 
