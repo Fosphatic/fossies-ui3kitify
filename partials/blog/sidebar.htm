@@ -4,17 +4,39 @@
 hideOrphans = 1
 results = 5
 direction = "asc"
+
+[searchInput searchinputUIkitify]
+useAutoComplete = 1
+autoCompleteResultCount = 3
+showProviderBadge = 1
 ==
 <div class="uk-tile-primary uk-padding-small">
-        <!-- Search -->
-    <form role="form">
-        <div class="uk-inline">
-            <div class="input-group">
-                <span class="uk-form-icon" uk-icon="icon: search"></span>
-                <input class="uk-input" type="text" placeholder="Search posts...">
-           </div>
+    <div class="uk-margin">
+        <form class="uk-search uk-search-default" action="{{ 'search' | page }}" method="get">
+            <a href="{{ 'search' | page }}" uk-search-icon method="get"></a>
+            <button class="uk-button uk-button-primary uk-button-small" uk-icon="icon: search" type="submit"></button>
+            <input class="uk-search-input" name="q" type="search" placeholder="Search..."data-request="search::onType" data-request-success="console.log(data)" data-track-input="true" autocomplete="on">
+        </form>
+    </div>
+    
+        <div class="uk-offcanvas-content">
+
+    <!-- The whole page content goes here -->
+        <div id="offcanvas-search" uk-offcanvas="mode: push; flip: true;">
+            <div class="uk-offcanvas-bar">
+    
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+                <h3>Title</h3>
+    
+                
+    
+            </div>
         </div>
-    </form>
+    
+    </div>
+
+
     
     <!-- Categories -->
     <div class="panel panel-default uk-margin">

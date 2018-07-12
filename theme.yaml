@@ -10,3 +10,4 @@ require:
     - Rainlab.Pages
     - Mey.Breadcrumbs
     - Bedard.BlogTags
+    - OFFLINE.SiteSearch

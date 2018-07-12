@@ -9,28 +9,19 @@ code = "main-menu"
         <div class="uk-container">
             <nav uk-navbar>
                 <div class="uk-navbar-left">
-                    <div class="tm-logo-container">
-                        <a href="/#"><img class="uk-navbar-item uk-logo"></img></a>
-                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 168 155" style="enable-background:new 0 0 168 155;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path class="tm-logo-path tm-logo-letter1"d="M117.39,33.3L93.3,47.9l27.8,15.82v41.49l-37.32,20.74L47.08,105.2V73.04L23,60.65v58.9l59.91,35.17 L145,119.55V49.19L117.39,33.3z"/>
-                         </g>
-                         <g>
-                             <polygon class="tm-logo-path tm-logo-letter2" points="106.23,27.5 82.91,14 58.57,29.06 82.22,42.06 "/>
-                         </g>
-                        </g>
-                        </svg>                       
+                  <div class="tm-logo-container">
+                       
+                    <a href="/uikitify"><img src="{{ 'assets/images/theme/logo.svg'|theme }}" width="120" height="auto" uk-svg></a>
+                       
                     </div>
 
 
-                            
+                    
                             <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav uk-visible@s">
                             <li>{% component 'kitifyMenu' %}</li>
                             </ul>
                             </div>
-                            
                     
 
                 </div>
@@ -41,7 +32,7 @@ code = "main-menu"
         </div>
     </header>
     <div id="offcanvas" uk-offcanvas="flip: true; overlay: true; mode: push">
-        <div class="uk-offcanvas-bar">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-secondary">
 
             <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
 

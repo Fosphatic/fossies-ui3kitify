@@ -3364,7 +3364,7 @@ select.uk-form-width-xsmall {
   color: #999; }
 
 .uk-search-input::placeholder {
-  color: #999; }
+  color: #FFF; }
 
 /* Icon (Adopts `uk-icon`)
  ========================================================================== */
@@ -3384,14 +3384,14 @@ select.uk-form-width-xsmall {
   /* 1 */
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 40px;
   left: 0;
   /* 2 */
   display: inline-flex;
   justify-content: center;
   align-items: center;
   /* 3 */
-  color: #999; }
+  color: #FFF; }
 
 /*
  * Required for `a`.
@@ -3425,7 +3425,7 @@ select.uk-form-width-xsmall {
   padding-left: 6px;
   padding-right: 6px;
   background: transparent;
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #fff; }
 
 /* Focus */
 .uk-search-default .uk-search-input:focus {
@@ -3501,7 +3501,7 @@ select.uk-form-width-xsmall {
 /* Hover + Focus */
 .uk-search-toggle:hover,
 .uk-search-toggle:focus {
-  color: #666; }
+  color: #000; }
 
 /* ========================================================================
    Component: Nav
@@ -9350,12 +9350,7 @@ blockquote p {
     height: auto;
     }
 }
-@media (min-width:768px)  {
-#Layer_1 {
-    width: 130px;
-    height: auto;
-    }
-}
+
 @media (min-width: 768px) and (max-width:1024px)  {
     .tm-offcanvas-menu  {
     width: 40vw;
@@ -9390,13 +9385,12 @@ blockquote p {
 .tm-logo-container {
   overflow: hidden;
   position: relative;
-  width: 168px;
-  height: "auto";
   margin-bottom: 15px;
 }
 .tm-logo-container svg {
   width: 100%;
   height: 100%;
+  display:block;
 }
 .tm-logo-path {
   stroke: #39f;
@@ -9457,19 +9451,6 @@ blockquote p {
     fill-opacity: 1;
   }
 }
-
-
-
-a:hover {
-    text-decoration: none! important;
-    color: #666;
-}
- tm-nav-menu a:hover{
-     text-decoration: none;
-}
-.tm-home-offcanvas a:hover {
-    color: #39f !important;
-}
 #layout-header .uk-navbar-container > .uk-container .uk-navbar-right {
     margin-right: 0px;
 }
@@ -9482,4 +9463,50 @@ a:hover {
 }
 .uk-tile-primary a:hover {
     color: #000 !important;
+}
+#Layer_1, .uk-logo {
+    display: block;
+}
+/* ========================================================================
+   Logo Animation End
+ ========================================================================== */
+a:hover {
+    text-decoration: none! important;
+    color: #666;
+}
+ tm-nav-menu a:hover{
+     text-decoration: none;
+}
+.tm-home-offcanvas a:hover {
+    color: #39f !important;
+}
+.uk-offcanvas-bar .uk-close {
+    color: #FFF !important;
+    border: 1px solid !important;
+}
+.uk-offcanvas-bar .uk-close:hover {
+    color: #39f !important;
+    border: 1px solid !important;
+}
+.uk-offcanvas-bar-secondary .uk-close {
+    color: #FFF !important;
+    border: 1px solid !important;
+    background: unset !important;
+}
+.uk-offcanvas-bar-secondary .uk-close:hover {
+    color: #39f !important;
+    border: 1px solid !important;
+    background: unset !important;
+}
+.uk-close {
+    color: #39f !important;
+    border: 1px solid !important;
+}
+.uk-close:hover {
+    color: #000 !important;
+    border: 1px solid !important;
+}
+.uk-modal-close-full {
+    top: 10px !important;
+    right: 10px !important;
 }

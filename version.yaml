@@ -18,3 +18,5 @@
     - Updated the requirements for the template
 1.0.9:
     - Animated Logo, two different off canvas menu behaviour, blog tags plugin integration
+1.1.0:
+    - Search Plugin implementation attempt and small fixes and css styles changes
