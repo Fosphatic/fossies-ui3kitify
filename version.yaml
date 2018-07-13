@@ -28,3 +28,5 @@
     - Added Disqus comment script in the blog single entry view
 1.1.4:
     - Custom 404 page
+1.1.5:
+    - Style change on offcanvas icon as it wasn't visible well on one of the slider images

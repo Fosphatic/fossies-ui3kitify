@@ -8996,13 +8996,19 @@ iframe.uk-cover {
     font-size:60pt;
 }
 .uk-navbar-toggle {
-    color: #000 !important;
-    background: rgb(51, 153, 255) !important;
+    color: rgb(51, 153, 255) !important;
+    background-color: rgb(0, 0, 0, .5) !important;
+    border: 2px solid !important;
     height: 60px !important;
     width: 60px !important;
 }
+.uk-navbar-toggle svg {
+    height: auto !important;
+    width: 20pt !important;
+}
 .uk-navbar-toggle.uk-open, .uk-navbar-toggle:focus, .uk-navbar-toggle:hover {
-    color: #FFF !important;
+    color: #000 !important;
+    background-color: rgb(51, 153, 255, .5) !important;
     }
 @media (max-width:480px) {
 	.uk-column-small-1-2 {
