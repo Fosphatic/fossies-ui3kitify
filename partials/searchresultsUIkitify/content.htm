@@ -1,3 +1,5 @@
+[viewBag]
+==
 <h4 class="ss-result__title">
     <a href="{{ result.url }}">{{ result.title | raw }}</a>
     {% if __SELF__.showProviderBadge %}
@@ -17,7 +19,6 @@
 <p class="ss-result__text">
     {{ result.excerpt | raw }}
 </p>
-
-<p class="ss-result__url">
-    <a href="{{ result.url | app }}" class="ss-result__link">{{ __SELF__.visitPageMessage }} &rarr;</a>
-</p>
+<div class="uk-margin-medium uk-animation-toggle">
+    <a href="{{ result.url | app }}" class="uk-button uk-button-primary">{{ __SELF__.visitPageMessage }} <span class="uk-animation-slide-right uk-animation-reverse" uk-icon="icon: chevron-right"></span></a>
+<div>

@@ -1,16 +1,16 @@
-[searchResults]
+[viewBag]
+
+[searchResults searchresultsUIkitify]
 resultsPerPage = 10
 showProviderBadge = 1
 noResultsMessage = "Your search returned no results."
 visitPageMessage = "Visit page"
-
-[viewBag]
 ==
 <section class="home uk-section uk-preserve-color" id="home">
     <div class="uk-container">
         
-        <h2>Search results for {{ searchResults.query }}</h2>
-        {% component 'searchResults' %}
+        <h2>Search results for {{ searchresultsUIkitify.query }}</h2>
+        {% component 'searchresultsUIkitify' %}
             
        </div>
     </div>
