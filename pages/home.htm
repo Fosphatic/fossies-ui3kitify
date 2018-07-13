@@ -29,7 +29,10 @@ code = "main-menu"
             <nav class="hero-navbar uk-width-1-1@s uk-width-1-1@m uk-width-4-5@m" uk-navbar>
                 <div class="uk-navbar-left uk-flex-left">
 
-                    <a href="#"><img class="uk-navbar-item uk-logo" src="{{ 'assets/images/theme/logo.svg'|theme }}" alt=""></img></a>
+                   
+                    <div class="tm-logo-container">    
+                      <a href="/uikitify"><img src="{{ 'assets/images/theme/logo.svg'|theme }}" width="120" height="auto" uk-svg></a>                 
+                    </div>
 
                     
                 </div>
@@ -43,7 +46,7 @@ code = "main-menu"
         
         <li>
             <div class="texture-overlay-hero"></div>
-            <img src="{{ 'assets/images/theme/photo.jpg'|theme }}" alt="" uk-cover>
+            <img src="{{ 'assets/images/theme/dark.jpg'|theme }}" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
                 <h2 uk-slideshow-parallax="y: -150,0,0; opacity: 1,1,0">Heading</h2>
                 <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
@@ -51,7 +54,7 @@ code = "main-menu"
         </li>
         
         <li>
-            <img src="{{ 'assets/images/theme/dark.jpg'|theme }}" alt="" uk-cover>
+            <img src="{{ 'assets/images/theme/photo.jpg'|theme }}" alt="" uk-cover>
             <div class="uk-position-center uk-position-small uk-text-center uk-text-large-hero">
                 <h2 uk-slideshow-parallax="y: -150,0,0; opacity: 1,1,0">Heading</h2>
                 <p uk-slideshow-parallax="y: 150,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
@@ -82,7 +85,7 @@ code = "main-menu"
         
 </div>
     <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
-        <div class="uk-offcanvas-bar">
+        <div class="uk-offcanvas-bar  tm-home-offcanvas">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
@@ -91,14 +94,12 @@ code = "main-menu"
                         <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
                     </a>
             </div>
-                <ul class="uk-nav uk-nav-default">
-                <h3>Main Menu</h3>    
-                {% component 'kitifyMenu' %}
+                <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
+                    <h3 class="uk-panel-title">Main Menu</h3>    
+                <li>{% component 'kitifyMenu' %}<li>
                 </ul>
-
-            <h3>Title</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         </div>
     </div>

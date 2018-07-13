@@ -1,25 +1,61 @@
-<!-- Search -->
-<form role="form">
-    <div class="well">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search posts...">
-            <span class="input-group-btn">
-                <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
-            </span>
-        </div>
-    </div>
-</form>
+[viewBag]
 
-<!-- Categories -->
-<div class="panel panel-default">
-    <div class="panel-heading">
-        Categories
+[blogTags kitifyTags]
+hideOrphans = 1
+results = 5
+direction = "asc"
+
+[searchInput searchinputUIkitify]
+useAutoComplete = 1
+autoCompleteResultCount = 3
+showProviderBadge = 1
+searchPage = "search.htm"
+==
+<div class="uk-tile-primary uk-padding-small">
+    <div class="uk-margin">
+        <form class="uk-search uk-search-default" action="{{ 'search' | page }}" method="get">
+            <button class="uk-search-button uk-button uk-button-default uk-margin-small-right" type="submit" uk-icon="icon: search"></button>
+            <input class="uk-search-input" name="q" type="text" placeholder="Search" autocomplete="on">
+        </form>
     </div>
-    <ul class="list-group filter-list-group">
-        <li class="list-group-item"><a href="#">Databases</a> <span class="badge">13</span></li>
-        <li class="list-group-item"><a href="#">Design</a> <span class="badge">24</span></li>
-        <li class="list-group-item"><a href="#">Hardware</a> <span class="badge">12</span></li>
-        <li class="list-group-item"><a href="#">Management</a> <span class="badge">18</span></li>
-        <li class="list-group-item"><a href="#">Security</a> <span class="badge">2</span></li>
-    </ul>
+    
+        <div class="uk-offcanvas-content">
+
+    <!-- The whole page content goes here -->
+        <div id="offcanvas-search" uk-offcanvas="mode: push; flip: true;">
+            <div class="uk-offcanvas-bar">
+    
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+    
+                <h3>Title</h3>
+    
+                
+    
+            </div>
+        </div>
+    
+    </div>
+
+
+    
+    <!-- Categories -->
+    <div class="panel panel-default uk-margin">
+        <div class="panel-heading">
+            <h3>Categories:</h3>
+        </div>
+        
+        <ul class="uk-list uk-list-space">
+        <li>{% component 'blogCategories' %}</li>
+        <ul>
+    </div>
+    <!-- Tags -->
+    <div class="uk-width-1-4">
+        <div class="panel-heading">
+            <h3>Tags:</h3>
+        </div>
+        
+        {% component 'kitifyTags' %}
+        
+    </div>
+    
 </div>

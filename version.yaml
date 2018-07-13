@@ -15,4 +15,10 @@
 1.0.7:
     - Added support for the Page Plugin and dynamic main menu with additional styling
 1.0.8:
-    - Changed mobile menu behaviour as added a dynamic main menu in the Blog Top Bar
+    - Updated the requirements for the template
+1.0.9:
+    - Animated Logo, two different off canvas menu behaviour, blog tags plugin integration
+1.1.0:
+    - Search Plugin implementation attempt and small fixes and css styles changes
+1.1.1:
+    - Bugfix search button in the blog section

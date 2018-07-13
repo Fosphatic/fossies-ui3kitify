@@ -3364,7 +3364,7 @@ select.uk-form-width-xsmall {
   color: #999; }
 
 .uk-search-input::placeholder {
-  color: #999; }
+  color: #FFF; }
 
 /* Icon (Adopts `uk-icon`)
  ========================================================================== */
@@ -3384,14 +3384,14 @@ select.uk-form-width-xsmall {
   /* 1 */
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 40px;
   left: 0;
   /* 2 */
   display: inline-flex;
   justify-content: center;
   align-items: center;
   /* 3 */
-  color: #999; }
+  color: #FFF; }
 
 /*
  * Required for `a`.
@@ -3425,7 +3425,7 @@ select.uk-form-width-xsmall {
   padding-left: 6px;
   padding-right: 6px;
   background: transparent;
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #fff; }
 
 /* Focus */
 .uk-search-default .uk-search-input:focus {
@@ -3501,7 +3501,7 @@ select.uk-form-width-xsmall {
 /* Hover + Focus */
 .uk-search-toggle:hover,
 .uk-search-toggle:focus {
-  color: #666; }
+  color: #000; }
 
 /* ========================================================================
    Component: Nav
@@ -9276,14 +9276,6 @@ blockquote p {
     color: #000;
     font-size: 15pt;
 }
-@media (max-width:640px)  {
-    .uk-breadcrumb, .uk-breadcrumb .uk-active:hover, .tm-subnav-wrapper a {
-        font-size: 10pt;
-    }
-}
-
-
-
 .uk-breadcrumb > * > :hover, .uk-breadcrumb > * > :focus {
     color: #FFF !important;
 }
@@ -9309,16 +9301,226 @@ blockquote p {
     color: #39f !important;
     text-decoration: none;
 }
-.mobile-nav-menu {
-    line-height: 30pt;
+.uk-offcanvas-bar {
+    width: 100vw;
+    padding: 40px 40px;
+    background: rgb(51,51,51,0.95);
 }
-.uk-navbar-right {
-     font-size: 15pt;   
+.uk-offcanvas-close {
+    background: #39f;
+    color: #fff;
+    width: 40px;
+    height: 40px;
 }
-.uk-navbar-right a:hover{
-     text-decoration: none;   
+.uk-close:hover, .uk-close:focus {
+    color: #000;
+    outline: none;
 }
-a:hover{
-     text-decoration: none !important;
-     color: #666;
+.tm-offcanvas-menu  {
+    width: 85vw;
+    color: #fff;
+}
+@media (max-width:360px)  {
+    .tm-offcanvas-menu  {
+    width: 100vw;
+    color: #fff;
+    margin-top: 15vh;
+    }
+}
+@media (max-width:460px)  {
+    .tm-offcanvas-menu  {
+    width: 85vw;
+    color: #fff;
+    margin-top: 15vh;
+    }
+}
+@media (max-width:736px)  {
+    .tm-offcanvas-menu  {
+    width: 75vw;
+    color: #fff;
+    margin-top: 120px;
+    }
+    .uk-position-center {
+    top: 20vh;
+    }
+}
+@media (max-width:736px)  {
+#Layer_1 {
+    width: 120px;
+    height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px)  {
+    .tm-offcanvas-menu  {
+    width: 40vw;
+    color: #fff;
+    margin-top: 1vh;
+    }
+}
+@media (min-width: 1280px) {
+    .tm-offcanvas-menu  {
+    width: 20vw;
+    color: #fff;
+    }
+}
+
+.tm-offcanvas-menu h1.uk-panel-title, h2.uk-panel-title, h3.uk-panel-title, .tm-offcanvas-menu a, .tm-offcanvas-menu h3 {
+     color: #fff !important;
+}
+.tm-offcanvas-menu .uk-nav-default a:hover {
+    color: #000 !important;
+}
+
+.uk-offcanvas-bar-animation {
+    transition: -webkit-transform 1.5s ease-out;
+    transition: transform 1.5s ease-out;
+    transition: transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+}
+
+/* ========================================================================
+   Logo Animation:
+ ========================================================================== */
+
+.tm-logo-container {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+.tm-logo-container svg {
+  width: 100%;
+  height: 100%;
+  display:block;
+}
+.tm-logo-path {
+  stroke: #39f;
+  fill: #39f;
+  fill-opacity:0;
+}
+.tm-logo-border {
+  stroke-dasharray: 4900;
+  stroke-dashoffset: 4900;
+  animation: anim1 1.5s linear 1s forwards, anim4 1s linear 3s forwards;
+}
+@keyframes anim1 {
+  0%  {
+    stroke-dashoffset: 4900;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.tm-logo-letter1 {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  stroke-dasharray: 680;
+  stroke-dashoffset: 680;
+  animation: anim2 0.7s linear 2s forwards, anim4 1s linear 3s forwards;
+}
+@keyframes anim2 {
+  0%  {
+    stroke-dashoffset: 680;
+  }
+  100% {
+    stroke-dashoffset: 0;
+
+  }
+}
+.tm-logo-letter2 {
+  position: relative;
+  stroke-dasharray: 910;
+  stroke-dashoffset: 910;
+  animation: anim3 0.7s linear 2s forwards, anim4 1s linear 3s forwards;
+}
+@keyframes anim3 {
+  0%  {
+    stroke-dashoffset: 910;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes anim4 {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+#layout-header .uk-navbar-container > .uk-container .uk-navbar-right {
+    margin-right: 0px;
+}
+
+#layout-header .tm-nav-menu {
+    font-size: 15pt;
+}
+#layout-blog .uk-tile-primary, .uk-tile-primary a, .uk-tile-primary h1, .uk-tile-primary h2, .uk-tile-primary h3, .uk-tile-primary li {
+    color: #FFF !important;
+}
+.uk-tile-primary a:hover {
+    color: #000 !important;
+}
+#Layer_1, .uk-logo {
+    display: block;
+}
+/* ========================================================================
+   Logo Animation End
+ ========================================================================== */
+a:hover {
+    text-decoration: none! important;
+    color: #666;
+}
+ tm-nav-menu a:hover{
+     text-decoration: none;
+}
+.tm-home-offcanvas a:hover {
+    color: #39f !important;
+}
+.uk-offcanvas-bar .uk-close {
+    color: #FFF !important;
+    border: 1px solid !important;
+}
+.uk-offcanvas-bar .uk-close:hover {
+    color: #39f !important;
+    border: 1px solid !important;
+}
+.uk-offcanvas-bar-secondary .uk-close {
+    color: #FFF !important;
+    border: 1px solid !important;
+    background: unset !important;
+}
+.uk-offcanvas-bar-secondary .uk-close:hover {
+    color: #39f !important;
+    border: 1px solid !important;
+    background: unset !important;
+}
+.uk-close {
+    color: #39f !important;
+    border: 1px solid !important;
+}
+.uk-close:hover {
+    color: #000 !important;
+    border: 1px solid !important;
+}
+.uk-modal-close-full {
+    top: 10px !important;
+    right: 10px !important;
+}
+.uk-search-button {
+    width: 40px;
+    top: 36px !important;
+    color: #FFF;
+    border: 0 !important;
+    float: right;
+    left: auto;
+    right: 0;
+    position: relative;
+    display: inline-block;
+}
+.uk-search-button:hover {
+    color: #000 !important;
 }

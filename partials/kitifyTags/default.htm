@@ -1,0 +1,7 @@
+[viewBag]
+==
+<ul>
+{% for tag in __SELF__.tags %}
+    <span class="uk-label">{{ tag.name }}</span>
+{% endfor %}
+</ul>
