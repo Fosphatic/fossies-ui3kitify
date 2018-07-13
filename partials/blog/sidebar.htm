@@ -18,32 +18,32 @@ searchPage = "search.htm"
             <input class="uk-search-input" name="q" type="text" placeholder="Search" autocomplete="on">
         </form>
     </div>
-    
+
         <div class="uk-offcanvas-content">
 
     <!-- The whole page content goes here -->
         <div id="offcanvas-search" uk-offcanvas="mode: push; flip: true;">
             <div class="uk-offcanvas-bar">
-    
+
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
-    
+
                 <h3>Title</h3>
-    
-                
-    
+
+
+
             </div>
         </div>
-    
+
     </div>
 
 
-    
+
     <!-- Categories -->
     <div class="panel panel-default uk-margin">
         <div class="panel-heading">
             <h3>Categories:</h3>
         </div>
-        
+
         <ul class="uk-list uk-list-space">
         <li>{% component 'blogCategories' %}</li>
         <ul>
@@ -53,9 +53,9 @@ searchPage = "search.htm"
         <div class="panel-heading">
             <h3>Tags:</h3>
         </div>
-        
+
         {% component 'kitifyTags' %}
-        
+
     </div>
-    
+
 </div>
