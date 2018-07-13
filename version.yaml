@@ -26,3 +26,5 @@
     - Styling the search results page
 1.1.3:
     - Added Disqus comment script in the blog single entry view
+1.1.4:
+    - Custom 404 page

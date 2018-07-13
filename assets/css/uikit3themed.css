@@ -9524,3 +9524,11 @@ a:hover {
 .uk-search-button:hover {
     color: #000 !important;
 }
+#layout-error-content .tm-404-background {
+    width: 100vw !important;
+    height:100vh !important;
+}
+#layout-error-content .uk-text-background {
+    background-color: #FFF;
+    display: unset;
+}
