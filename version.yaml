@@ -24,3 +24,5 @@
     - Bugfix search button in the blog section
 1.1.2:
     - Styling the search results page
+1.1.3:
+    - Added Disqus comment script in the blog single entry view
