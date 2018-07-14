@@ -1,3 +1,4 @@
+[viewBag]
 ==
 {% set post = __SELF__.post %}
 <div class="tm-article-wrapper" uk-scrollspy="cls:uk-animation-fade; delay: 500 repeat:true">
@@ -26,7 +27,7 @@
     Posted
     {% if post.categories.count %} in
         {% for category in post.categories %}
-            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+            <a id="cat-crumb-title" href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
     {% endif %}
     on {{ post.published_at|date('M d, Y') }}
