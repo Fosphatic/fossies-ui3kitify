@@ -9463,6 +9463,13 @@ blockquote p {
 
 #layout-header .tm-nav-menu {
     font-size: 15pt;
+    text-transform: uppercase;
+}
+#layout-header .tm-nav-menu:hover {
+    color: #000 !important;
+}
+#layout-header .tm-nav-menu:active {
+    color: #000 !important;
 }
 #layout-blog .uk-tile-primary, .uk-tile-primary a, .uk-tile-primary h1, .uk-tile-primary h2, .uk-tile-primary h3, .uk-tile-primary li {
     color: #FFF !important;
@@ -9537,4 +9544,7 @@ a:hover {
 #layout-error-content .uk-text-background {
     background-color: #FFF;
     display: unset;
+}
+#layout-header .uk-active a {
+    color: #000 !important;
 }

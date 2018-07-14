@@ -30,3 +30,6 @@
     - Custom 404 page
 1.1.5:
     - Style change on offcanvas icon as it wasn't visible well on one of the slider images
+1.2.0:
+    - First implementation attempt of a functional horizontal menu with submenu with nice animation in Blog section, menues have to be made by static pages plugin
+    - Offcanvas menu shows submenu entries now too

@@ -1,0 +1,23 @@
+[viewBag]
+==
+<ul class="{{ class }}">
+    {% for item in items %}
+        <li 
+            class="{{ item.isActive or item.isChildActive ? 'uk-active' : '' }} 
+            {{ item.items ? '' : '' }}"
+        >
+            <a 
+                {% if item.items %}class="uk-nav uk-navbar-dropdown-nav" data-toggle="data-uk-dropdown"{% endif %} 
+                href="{{ item.url }}"
+            >
+                {{ item.title }}
+
+                {% if item.items %}<span class="class="uk-margin-small-right" uk-icon="cehvron-right"></span>{% endif %}
+            </a>
+
+            {% if item.items %}
+                {% partial 'menu-items' items=item.items class='uk-nav uk-navbar-dropdown' %}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

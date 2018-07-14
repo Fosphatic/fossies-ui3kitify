@@ -18,7 +18,7 @@ items:
         nesting: ''
         type: cms-page
         url: ''
-        code: ''
+        code: 'function onInit() {     $this[''activeMenuItem''] = ''blog''; }'
         reference: Blog/blog
         cmsPage: ''
         replace: ''
@@ -26,3 +26,52 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+    -
+        title: 'Item Submenu'
+        type: cms-page
+        code: ''
+        reference: '404'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Child Item 1'
+                nesting: ''
+                type: cms-page
+                url: ''
+                code: ''
+                reference: styleguide/uikit3
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Child Item 2'
+                nesting: ''
+                type: cms-page
+                url: ''
+                code: ''
+                reference: '404'
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'UIkit 3 Style Guide'
+                nesting: ''
+                type: cms-page
+                url: ''
+                code: ''
+                reference: styleguide/uikit3
+                cmsPage: ''
+                replace: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
