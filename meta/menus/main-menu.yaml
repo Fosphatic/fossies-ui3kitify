@@ -30,7 +30,7 @@ items:
         title: 'Item Submenu'
         type: cms-page
         code: ''
-        reference: '404'
+        reference: styleguide/uikit3
         viewBag:
             isHidden: '0'
             cssClass: ''

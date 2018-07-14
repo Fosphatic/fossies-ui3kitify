@@ -9600,3 +9600,14 @@ a:hover {
     float: left;
     position: relative;
 }
+
+.uk-navbar-brand {
+	font-size:18px;
+	color:#666;
+	text-decoration:none
+}
+.uk-navbar-toggle:hover,.uk-navbar-toggle:focus {
+	color:#ea3224;
+	text-decoration:none;
+	outline:none
+}

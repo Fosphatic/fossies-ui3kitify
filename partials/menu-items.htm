@@ -3,8 +3,8 @@
 <ul class="{{ class }}">
     {% for item in items %}
         <li 
-            class="{{ item.isActive or item.isChildActive ? 'uk-active' : '' }} 
-            {{ item.items ? '' : '' }}"
+            class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? 'active:disabled' : '' }}
+            {{ item.items ? 'dropdown' : '' }}"
         >
             <a 
                 {% if item.items %}class="uk-nav uk-navbar-dropdown-nav" data-toggle="data-uk-dropdown"{% endif %} 
@@ -17,7 +17,7 @@
 
             {% if item.items %}
                 {% partial 'menu-items' items=item.items class='uk-nav uk-navbar-dropdown' %}
-                <li class="uk-nav-divider"></li>
+                
             {% endif %}
         </li>
     {% endfor %}
