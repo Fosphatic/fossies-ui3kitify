@@ -9006,6 +9006,20 @@ iframe.uk-cover {
     height: 60px !important;
     width: 60px !important;
 }
+#layout-header .uk-navbar-toggle {
+    color: rgb(51, 153, 255) !important;
+    background-color: unset !important;
+    border: 2px solid !important;
+    height: 60px !important;
+    width: 60px !important;
+    transition: background-color, color 1s ease-out;
+}
+#layout-header .uk-navbar-toggle:hover {
+    color: #FFF !important;
+    background-color: rgb(51, 153, 255) !important;
+    border: 2px solid rgb(51, 153, 255) !important;
+    transition: background-color, color .7s ease-in-out;
+}
 .uk-navbar-toggle svg {
     height: auto !important;
     width: 20pt !important;
@@ -9566,7 +9580,7 @@ a:hover {
     width: 100%;
 }
 .uk-navbar-nav > li {
-    margin-right: 25px !important;
+    margin-right: 5px !important;
 }
 .uk-navbar-nav > li > a::after {
     content: "";
