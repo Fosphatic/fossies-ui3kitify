@@ -3517,12 +3517,14 @@ select.uk-form-width-xsmall {
 .uk-nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none; 
+  text-transform: uppercase; }
 
 /* 2 */
 .uk-nav li > a {
   display: block;
-  text-decoration: none; }
+  text-decoration: none; 
+  text-transform: uppercase; }
 
 /* 3 */
 .uk-nav li > a:focus {
@@ -3533,7 +3535,8 @@ select.uk-form-width-xsmall {
  * Must target `a` elements to exclude other elements (e.g. lists)
  */
 .uk-nav > li > a {
-  padding: 5px 0; }
+  padding: 5px 0; 
+  text-transform: uppercase; }
 
 /* Sublists
  ========================================================================== */
@@ -3818,10 +3821,11 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  color: #999;
+  color: #353535;
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
-  transition-property: color, background-color; }
+  transition-property: color, background-color;
+  font-size: 12pt; }
 
 /*
  * Hover
@@ -3830,7 +3834,7 @@ ul.uk-nav-sub {
 .uk-navbar-nav > li:hover > a,
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li > a.uk-open {
-  color: #666;
+  color: #39f;
   outline: none; }
 
 /* OnClick */
@@ -9546,5 +9550,53 @@ a:hover {
     display: unset;
 }
 #layout-header .uk-active a {
-    color: #000 !important;
+    color: #39f !important;
+    font-weight: bold;
+}
+#layout-header .uk-active a:hover {
+    color: #666 !important;
+}
+.uk-navbar-nav > li > a:hover::after {
+	width: 100%
+}
+.uk-navbar-nav > li.uk-active > a:hover::after {
+	width: 0;
+}
+.uk-navbar-nav > li.uk-active > a::after {
+    width: 100%;
+}
+.uk-navbar-nav > li {
+    margin-right: 25px !important;
+}
+.uk-navbar-nav > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: -46px;
+    height: 5pt;
+    background: #39f;
+    width: 0;
+    left: 0px;
+    -webkit-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+}
+.uk-subnav::before, .uk-subnav::after {
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+.uk-subnav-line > ::before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+}
+.uk-navbar-content::before, .uk-navbar-brand::before, .uk-navbar-toggle::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.uk-navbar-nav > li {
+    float: left;
+    position: relative;
 }

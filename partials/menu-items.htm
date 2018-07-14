@@ -12,11 +12,12 @@
             >
                 {{ item.title }}
 
-                {% if item.items %}<span class="class="uk-margin-small-right" uk-icon="cehvron-right"></span>{% endif %}
+                {% if item.items %}<span uk-icon="icon:  more-vertical"></span>{% endif %}
             </a>
 
             {% if item.items %}
                 {% partial 'menu-items' items=item.items class='uk-nav uk-navbar-dropdown' %}
+                <li class="uk-nav-divider"></li>
             {% endif %}
         </li>
     {% endfor %}
