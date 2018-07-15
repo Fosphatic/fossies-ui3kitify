@@ -9008,8 +9008,9 @@ iframe.uk-cover {
     outline: 0;
 }
 .uk-logo {
-    width: 150px !important;
+    width: 120px !important;
     height: auto !important;
+    max-width: 120px;
 }
 .uk-text-large-hero {
     font-size:40pt;
@@ -9645,3 +9646,9 @@ a:hover {
 }
 .tm-line-zero {
     line-height: 0 !important; }
+
+@media (max-width: 420px) {
+  .mobile-float {
+    float: left !important;
+    display: block;
+    flex: inherit !important; } }
