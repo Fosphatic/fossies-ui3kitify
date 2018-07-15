@@ -1873,7 +1873,7 @@ select.uk-form-width-xsmall {
  */
 .uk-button-primary {
   background-color: #39f;
-  color: #fff;
+  color: #fff !important;
   border: 1px solid transparent; }
 
 /* Hover + Focus */

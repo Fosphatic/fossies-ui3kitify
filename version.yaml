@@ -38,3 +38,5 @@
     - Implementation of a navigation menu generated in static pages plugin in the bottom section of the page
 1.2.2:
     - Bugfix the bottom menu on start page it was interfering with the offcanvas menu, now it can be styled additionaly
+1.2.3:
+    - Bugfix primary button color smaller visual changes
