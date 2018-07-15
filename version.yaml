@@ -42,3 +42,6 @@
     - Bugfix primary button color smaller visual changes
 1.2.4:
     - Bugfix horizontal main menu active child item works now how it should
+1.2.5:
+    - Style change off canvas bar in blog section
+    - Dynamic menu from static pages plugin changed in off canvas menu, it shows now even sub subitems
