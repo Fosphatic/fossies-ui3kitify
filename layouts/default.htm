@@ -1,4 +1,8 @@
-description = "UIkit 3 style guide"
+description = "Default Page Layout"
+
+[staticPage]
+useContent = 1
+default = 0
 ==
 <!DOCTYPE html>
 <html lang="de" class="no-js" dir="ltr">
@@ -23,18 +27,18 @@ description = "UIkit 3 style guide"
     <header id="layout-header">
         {% partial 'site/header' %}
     </header>
-
-    <!-- Content -->
-    <section id="layout-content">
-        {% page %}
-    </section>
-
+    
+        <!-- Content -->
+    <page id="layout-page">
+            {% partial 'site/page' %}
+    </page>
+        
         <!-- Footer -->
     <bottom id="layout-bottom">
         {% partial 'site/bottom' %}
     </bottom>
                     
-    <!-- Footer -->
+        <!-- Footer -->
     <footer id="layout-footer">
         {% partial 'site/footer' %}
     </footer>

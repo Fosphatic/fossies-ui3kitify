@@ -1,2 +1,5 @@
 static-pages:
-    homehtm: {  }
+    bottom-menu:
+        bottom-menu-terms-of-use: {  }
+        bottom-menu-privacy-policy: {  }
+        bottom-menu-disclaimer: {  }

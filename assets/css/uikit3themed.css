@@ -49,11 +49,23 @@ a,
   color: #1e87f0;
   text-decoration: none;
   cursor: pointer; }
+  
+#layout-bottom a,
+.uk-link {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
 
 a:hover,
 .uk-link:hover {
   color: #0f6ecd;
   text-decoration: underline; }
+
+#layout-bottom a:hover,
+.uk-link:hover {
+  color: #39f;
+  text-decoration: underline; }
+
 
 /* Text-level semantics
  ========================================================================== */
@@ -2056,6 +2068,12 @@ select.uk-form-width-xsmall {
   .uk-section {
     padding-top: 70px;
     padding-bottom: 70px; } }
+    
+@media (min-width: 960px) {
+  #layout-bottom .uk-section {
+    padding-top: 25px;
+    padding-bottom: 25px; } }
+
 
 /*
  * Micro clearfix
@@ -4103,7 +4121,7 @@ ul.uk-nav-sub {
 /* Hover + Focus */
 .uk-subnav > * > a:hover,
 .uk-subnav > * > a:focus {
-  color: #666;
+  color: #39f;
   text-decoration: none;
   outline: none; }
 
@@ -9209,7 +9227,7 @@ blockquote p {
     }
 }
 #layout-bottom  .uk-subnav.uk-subnav-line.uk-text-bold {
-    line-height: 40px
+    line-height: 20px
 }
 .uk-navbar-container {
     min-height: 120px;
@@ -9625,3 +9643,5 @@ a:hover {
 	text-decoration:none;
 	outline:none
 }
+.tm-line-zero {
+    line-height: 0 !important; }

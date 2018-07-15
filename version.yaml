@@ -33,3 +33,6 @@
 1.2.0:
     - First implementation attempt of a functional horizontal menu with submenu with nice animation in Blog section, menues have to be made by static pages plugin
     - Offcanvas menu shows submenu entries now too
+1.2.1:
+    - Small visiual fixes
+    - Implementation of a navigation menu generated in static pages plugin in the bottom section of the page

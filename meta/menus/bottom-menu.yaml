@@ -1,0 +1,13 @@
+name: bottom-menu
+items:
+    -
+        title: bottom-menu
+        nesting: '1'
+        type: static-page
+        code: ''
+        reference: bottom-menu
+        replace: '1'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
