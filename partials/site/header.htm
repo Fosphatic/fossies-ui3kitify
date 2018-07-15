@@ -14,7 +14,7 @@ code = "main-menu"
                   </div>
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav uk-visible@m">                        
-                                <li>{% partial 'menu-items' items=kitifyMenu.menuItems class='nav uk-navbar-nav' %}</li>
+                                <li>{% partial 'navigation/menu-items' items=kitifyMenu.menuItems class='nav uk-navbar-nav' %}</li>
                             </ul>
                             
                         </div>
@@ -26,24 +26,22 @@ code = "main-menu"
             </nav>
         </div>
     </header>
-    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true; mode: push">
-        <div class="uk-offcanvas-bar uk-offcanvas-bar-secondary">
+    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true; mode: slide">
+        <div class="uk-offcanvas-bar  tm-home-offcanvas">
 
-            <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
 
             <div class="uk-panel uk-text-center">
-                    <a href="/#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
+                    <a href="/#">
+                        <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_secondary.svg'|theme }}" alt="Logo"></img></a>
+                    </a>
             </div>
-            
-            <div class="uk-panel uk-panel-box uk-panel-header tm-offcanvas-menu uk-tile uk-tile-primary uk-padding-large uk-position-center">
-            <div class="uk-width-1-1@s">
-            <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
-            <h3 class="uk-panel-title">Main Menu</h3>    
-            <li>{% component 'kitifyMenu' %}</li>
-            </ul>
-            
-            </div>
-            </div>
-            
+                
+                {% partial 'navigation/offcanvas-menu-items' items=kitifyMenu.menuItems class='uk-nav-default uk-nav-parent-icon uk-nav' %}
+                
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
         </div>
     </div>
+</div>

@@ -14,7 +14,7 @@
             {% if item.items %}
              <div class="uk-navbar-dropdown">
                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li> {% partial 'menu-items' items=item.items class='uk-child-item' %} </li>
+                    <li> {% partial 'navigation/menu-items' items=item.items class='uk-child-item uk-nav-sub' %} </li>
                  </ul>
              </div>
             {% endif %}

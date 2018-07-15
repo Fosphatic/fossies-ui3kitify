@@ -1,0 +1,24 @@
+[viewBag]
+==
+<ul class="{{ class }} uk-nav-parent-icon" uk-nav="multiple: true">
+
+    {% for item in items %}
+        <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? '' : '' }} {{ item.items ? 'uk-parent' }}">
+            
+            <a {% if item.items %}class="uk-nav uk-parent" data-toggle="data-uk-dropdown"{% endif %} href="{{ item.url }}"> 
+                {{ item.title }} 
+            </a>
+         
+         
+         
+            {% if item.items %}    
+            
+                <ul class="uk-nav-sub">
+                    <li> {% partial 'navigation/offcanvas-menu-items' items=item.items class='' %} </li>
+                </ul>
+            
+            {% endif %}
+            </li>
+    {% endfor %}
+
+ </ul>

@@ -3,3 +3,15 @@ static-pages:
         bottom-menu-terms-of-use: {  }
         bottom-menu-privacy-policy: {  }
         bottom-menu-disclaimer: {  }
+    main-menu:
+        main-menu-subitem-1: {  }
+        main-menu-subitem-2: {  }
+        main-menu-subitem-3:
+            main-menu-subitem-3-sub-subitem-1: {  }
+            main-menu-subitem-3-sub-subitem-2: {  }
+            main-menu-subitem-3-sub-subitem-3:
+                main-menu-subitem-3-subitem-3-sub-subitem-1: {  }
+                main-menu-subitem-3-subitem-3-sub-subitem-2:
+                    main-menu-subitem-3-subitem-3-sub-subitem-2-sub-sub-subitem-1: {  }
+                    main-menu-subitem-3-subitem-3-sub-subitem-2-sub-sub-subitem-1-sub-sub-subitem-2: {  }
+                main-menu-subitem-3-subitem-3-sub-subitem-3: {  }

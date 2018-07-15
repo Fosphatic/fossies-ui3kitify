@@ -94,10 +94,9 @@ code = "main-menu"
                         <a href="#"><img class="uk-navbar-item uk-logo uk-align-center" src="{{ 'assets/images/theme/logo_contrast.svg'|theme }}" alt="Logo"></img></a>
                     </a>
             </div>
-                <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
-                    <h3 class="uk-panel-title">Main Menu</h3>    
-                <li>{% component 'kitifyMenu' %}<li>
-                </ul>
+                
+                {% partial 'navigation/offcanvas-menu-items' items=kitifyMenu.menuItems class='uk-nav-default uk-nav-parent-icon uk-nav' %}
+                
                 <h3>Title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 

@@ -1,20 +1,24 @@
 [viewBag]
 ==
 {% for item in items if not item.viewBag.isHidden %}
-    <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? '' : '' }} {{ item.viewBag.cssClass }}">
+    <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? 'uk-parent' : '' }} {{ item.viewBag.cssClass }}">
         {% if item.url %}
 
             <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
-                <div class="tm-nav-menu"> {{ item.title }} </div>
+                {{ item.title }} 
             </a>
 
-             <li class="uk-nav-divider"></li>
+             
+        </li>     
         {% else %}
-            {{ item.title }}
+            <li class="uk-parent">{{ item.title }}</li>
         {% endif %}
 
         {% if item.items %}
-            <ul class="uk-margin-small-left">{% partial __SELF__ ~ "::items" items=item.items %}</ul>
+            <li class="uk-parent">
+                <ul class="uk-nav-sub">
+                    <li class="uk-parent"> {% partial 'kitifyMenu/items' items=item.items class='uk-child-item uk-nav-sub' %} </li>
+                </ul>
+           </li>
         {% endif %}
-    </li>
 {% endfor %}

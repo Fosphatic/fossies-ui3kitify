@@ -9345,13 +9345,11 @@ blockquote p {
     text-decoration: none;
 }
 .uk-offcanvas-bar {
-    width: 100vw;
-    padding: 40px 40px;
-    background: rgb(51,51,51,0.95);
+    background: rgb(255,255,255,0.95);
 }
 .uk-offcanvas-close {
-    background: #39f;
-    color: #fff;
+    color: #39f !important;
+    border: 1px solid;
     width: 40px;
     height: 40px;
 }
@@ -9531,12 +9529,13 @@ a:hover {
     color: #39f !important;
 }
 .uk-offcanvas-bar .uk-close {
-    color: #FFF !important;
+    color: #FFF;
     border: 1px solid !important;
 }
 .uk-offcanvas-bar .uk-close:hover {
-    color: #39f !important;
+    color: #000 !important;
     border: 1px solid !important;
+    background: #39f;
 }
 .uk-offcanvas-bar-secondary .uk-close {
     color: #FFF !important;

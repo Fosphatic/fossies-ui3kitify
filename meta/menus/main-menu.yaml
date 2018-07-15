@@ -27,51 +27,13 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Item Submenu'
-        type: cms-page
+        title: 'Entry with Subitems'
+        nesting: '1'
+        type: static-page
         code: ''
-        reference: styleguide/parent
+        reference: main-menu
+        replace: '1'
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
-        items:
-            -
-                title: 'Child Item 1'
-                nesting: ''
-                type: cms-page
-                url: ''
-                code: ''
-                reference: styleguide/uikit1
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
-            -
-                title: 'Child Item 2'
-                nesting: ''
-                type: cms-page
-                url: ''
-                code: ''
-                reference: styleguide/UIkit32
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
-            -
-                title: 'Child Items 3'
-                nesting: ''
-                type: cms-page
-                url: ''
-                code: ''
-                reference: styleguide/uikit3
-                cmsPage: ''
-                replace: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'

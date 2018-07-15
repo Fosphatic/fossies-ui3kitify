@@ -1,7 +1,7 @@
 [viewBag]
 ==
 {% for item in items if not item.viewBag.isHidden %}
-    <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? '' : '' }} {{ item.viewBag.cssClass }}">
+    <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? 'uk-parent' : '' }} {{ item.viewBag.cssClass }}">
         {% if item.url %}
             <div class="uk-animation-toggle">
             <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
@@ -15,7 +15,7 @@
         {% endif %}
 
         {% if item.items %}
-            <ul class="uk-margin-small-left">{% partial __SELF__ ~ "::items" items=item.items %}</ul>
+            <ul class="uk-nav-sub">{% partial __SELF__ ~ "::items" items=item.items %}</ul>
         {% endif %}
     </li>
 {% endfor %}
