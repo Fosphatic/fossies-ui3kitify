@@ -1,14 +1,13 @@
 [viewBag]
 ==
 {% for item in items if not item.viewBag.isHidden %}
-    <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? 'uk-active' : '' }} {{ item.viewBag.cssClass }}">
+    <li role="presentation" class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? '' : '' }} {{ item.viewBag.cssClass }}">
         {% if item.url %}
-            <div class="uk-animation-toggle">
+
             <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
                 <div class="tm-nav-menu"> {{ item.title }} </div>
-               
             </a>
-            </div>
+
              <li class="uk-nav-divider"></li>
         {% else %}
             {{ item.title }}

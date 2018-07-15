@@ -30,7 +30,7 @@ items:
         title: 'Item Submenu'
         type: cms-page
         code: ''
-        reference: styleguide/uikit3
+        reference: styleguide/parent
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -42,7 +42,7 @@ items:
                 type: cms-page
                 url: ''
                 code: ''
-                reference: styleguide/uikit3
+                reference: styleguide/uikit1
                 cmsPage: ''
                 replace: ''
                 viewBag:
@@ -55,7 +55,7 @@ items:
                 type: cms-page
                 url: ''
                 code: ''
-                reference: '404'
+                reference: styleguide/UIkit32
                 cmsPage: ''
                 replace: ''
                 viewBag:
@@ -63,7 +63,7 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'UIkit 3 Style Guide'
+                title: 'Child Items 3'
                 nesting: ''
                 type: cms-page
                 url: ''

@@ -9652,3 +9652,10 @@ a:hover {
     float: left !important;
     display: block;
     flex: inherit !important; } }
+    
+#layout-header .uk-child-item a {
+    color: #999 !important;
+}
+#layout-header .uk-child-item a:hover, #layout-header .uk-child-item .uk-active a  {
+    color: #39f !important;
+}

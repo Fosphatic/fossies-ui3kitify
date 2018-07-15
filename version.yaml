@@ -40,3 +40,5 @@
     - Bugfix the bottom menu on start page it was interfering with the offcanvas menu, now it can be styled additionaly
 1.2.3:
     - Bugfix primary button color smaller visual changes
+1.2.4:
+    - Bugfix horizontal main menu active child item works now how it should
