@@ -3861,7 +3861,8 @@ ul.uk-nav-sub {
 
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
-  color: #39f; }
+  color: #39f;
+  font-weight: bold; }
 
 /* Item
  ========================================================================== */
@@ -9581,10 +9582,7 @@ a:hover {
     background-color: #FFF;
     display: unset;
 }
-#layout-header .uk-active a {
-    color: #39f !important;
-    font-weight: bold;
-}
+
 #layout-header .uk-active a:hover {
     color: #666 !important;
 }
