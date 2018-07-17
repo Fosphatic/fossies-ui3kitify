@@ -10,7 +10,14 @@ categoryPage = "Blog/category"
 slug = "{{ :slug }}"
 displayEmpty = 1
 categoryPage = "Blog/category"
+
+[SeoBlogPost]
+post = "post"
 ==
+<head>
+{% component 'SeoBlogPost' %}
+</head>
+
 <section class="uk-section uk-article uk-preserve-color" id="blog">
     <div class="uk-container">
         <div class="uk-grid-match" uk-scrollspy="cls:uk-animation-fade; delay: 250; repeat: true" uk-grid uk-margin-medium>

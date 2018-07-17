@@ -3,6 +3,8 @@ description = "Default Page Layout"
 [staticPage]
 useContent = 1
 default = 0
+
+[SeoStaticPage]
 ==
 <!DOCTYPE html>
 <html lang="de" class="no-js" dir="ltr">
@@ -20,6 +22,8 @@ default = 0
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
     <link rel="stylesheet" href="{{ 'assets/css/uikit3themed.css'|theme }}?v={{ this.theme.version }}">
     {% styles %}
+    
+    {% component 'SeoStaticPage' %}
 </head>
 
 <body>

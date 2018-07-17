@@ -611,7 +611,7 @@ a.uk-link-reset:hover,
 .uk-divider-icon {
   position: relative;
   height: 20px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%23e5e5e5%22%20stroke-width%3D%222%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%233399ff%22%20stroke-width%3D%222%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
@@ -3432,8 +3432,6 @@ select.uk-form-width-xsmall {
 
 /* Default modifier
  ========================================================================== */
-.uk-search-default {
-  width: 180px; }
 
 /*
  * Input
@@ -8987,7 +8985,7 @@ iframe.uk-cover {
     border: 0px;
 }
 .projects-slider .uk-dotnav > .uk-active > * {
-    background-color: rgba(0, 0, 0) !important;
+    background-color: rgba(255, 255, 255) !important;
     border: 0px solid rgba(255, 255, 255);
 }
 .projects-slider .uk-dotnav > * :focus, .uk-dotnav > * :hover {
@@ -9656,3 +9654,159 @@ a:hover {
 #layout-header .uk-child-item a:hover, #layout-header .uk-child-item .uk-active a  {
     color: #39f !important;
 }
+.uk-text-contrast {
+    color: #FFF; }
+
+.maps {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.tm-maps {
+    max-height: 600px;
+    min-width: 100%;
+    height: 600px;
+}
+
+/* ========================================================================
+   Overlay Panel Start
+ ========================================================================== */
+
+.tm-overlay-hover:not(:hover):not(.tm-hover) .tm-overlay-panel:not(.tm-ignore) {
+    opacity: 0;
+}
+.tm-overlay.tm-overlay-uikitify .uk-overlay-panel {
+    padding: 30px;
+}
+.tm-overlay-fade {
+    opacity: .7;
+}
+.uk-overlay-fade, .tm-overlay-scale, .tm-overlay-spin, .tm-overlay-grayscale, .tm-overlay-blur, [class*="uk-overlay-slide"] {
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    transition-property: opacity,transform,filter;
+}
+.tm-overlay-background {
+    background: #fff;
+    color: #999;
+}
+.tm-overlay-panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: #fff;
+}
+
+.tm-overlay.tm-overlay-uikitify .tm-overlay-panel {
+    padding: 30px;
+}
+.tm-overlay.tm-overlay-uikitify .tm-overlay-panel:not(:hover) [class*="uk-animation-"] {
+    opacity: 0;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+.tm-animation-hover:not(:hover), .tm-animation-hover:not(:hover) [class*="uk-animation-"], .u-touch .tm-animation-hover:not(.uk-hover), .uk-touch .tm-animation-hover:not(.uk-hover) [class*="uk-animation-"] {
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+.tm-overlay {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    margin: 0;
+    margin-bottom: 0px;
+}
+.tm-overlay:hover .tm-overlay-background, .tm-overlay:hover .tm-overlay-background + .tm-overlay-panel, .tm-overlay:hover .tm-overlay-background ~ .tm-overlay-panel {
+    color: #999;
+}
+#team .uk-position-center .uk-overlay-icon.uk-icon  {
+    color: #39f !important;
+}
+
+#team .primary-line {
+    width: 62px;
+}
+#team .primary-line {
+    background: #9c3 none repeat scroll 0 0;
+}
+#team .primary-line:focus {
+    margin: 12px auto 6px;
+    width: 0;
+    height: 1px;
+    transition: all 0.5s ease;
+}
+
+#team .uk-icon-link.uk-margin-small-right.uk-icon {
+    color: rgb(51, 153, 255) !important;
+    border: 1px solid;
+    padding: 10pt;
+}
+#team .uk-icon-link.uk-margin-small-right.uk-icon:hover {
+    color: rgb(255, 255, 255) !important;
+    border: 1px solid #39f;
+    padding: 10pt;
+    background: #39f;
+}
+#team hr {
+    color: #39f !important;
+    border-top-color: rgb(51, 153, 255) !important;
+}
+
+.uk-text-contrast {
+    color: #39f;
+}
+
+.tm-divider-icon {
+  position: relative;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%233399ff%22%20stroke-width%3D%222%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227%22%20%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.tm-divider-icon::before,
+.tm-divider-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  max-width: calc(50% - (50px / 2));
+  border-bottom: 1px solid #39f; }
+
+.tm-divider-icon::before {
+  right: calc(50% + (50px / 2));
+  width: 100%; }
+
+.tm-divider-icon::after {
+  left: calc(50% + (50px / 2));
+  width: 100%; }
+  
+.team-slider .uk-dotnav > * > * {
+    width: 20pt;
+    height: 20pt;
+    border: 0px;
+}
+
+.team-slider .uk-dotnav > .uk-active > * {
+    background-color: rgba(255, 255, 255) !important;
+    border: 0px solid rgba(255, 255, 255);
+}
+
+.team-slider .uk-dotnav > * :focus, .uk-dotnav > * :hover {
+    background-color: rgba(102,102,102,.6) !important;
+    border: 0px solid rgba(255, 255, 255) !important;
+    outline: 0;
+}
+.team-title h2 {
+
+    font-size: 40pt;
+
+}
+
+/* ========================================================================
+   Overlay Panel End
+ ========================================================================== */

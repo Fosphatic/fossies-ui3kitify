@@ -1,7 +1,12 @@
 title = "home"
 url = "/"
 layout = "home"
+meta_title = "UIkitify Theme"
+meta_description = "UI3kitify Theme for october CMS. Awesome features, easy to customize."
 is_hidden = 0
+seo_keywords = "october cms, theme, uikit, blog"
+robot_index = "index"
+robot_follow = "follow"
 child_of = "mey_no_parent"
 hide_crumb = 0
 remove_crumb_trail = 0
@@ -122,6 +127,16 @@ code = "main-menu"
         <projects id="layout-projects">
             {% partial 'site/projects' %}
         </projects>
+        
+         <!-- Maps -->
+        <maps id="layout-maps">
+            {% partial 'site/maps' %}
+        </maps>
+        
+         <!-- Our Team -->
+        <team id="layout-team">
+            {% partial 'site/team' %}
+        </team>
         
         <!-- Footer -->
         <bottom id="layout-bottom">

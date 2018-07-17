@@ -45,3 +45,6 @@
 1.2.5:
     - Style change off canvas bar in blog section
     - Dynamic menu from static pages plugin changed in off canvas menu, it shows now even sub subitems
+1.3.0:
+    - Added two new sections, for team presentation and office location
+    - Smaller bugfixes and style changes

@@ -1,4 +1,7 @@
 description = "Default Blog layout"
+
+[SeoBlogPost]
+post = "post"
 ==
 <!DOCTYPE html>
 <html lang="de" class="no-js" dir="ltr">
@@ -6,6 +9,7 @@ description = "Default Blog layout"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow">
+    {% component 'SeoBlogPost' %}
     <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
     <link rel="canonical" href="{{ ''|page }}">
 
@@ -15,8 +19,10 @@ description = "Default Blog layout"
 
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
     <link rel="stylesheet" href="{{ 'assets/css/uikit3themed.css'|theme }}?v={{ this.theme.version }}">
+    
     {% styles %}
 </head>
+   
 
 <body>
         <!-- Header -->

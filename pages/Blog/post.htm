@@ -3,13 +3,22 @@ url = "/blog/post/:slug"
 layout = "blog"
 description = "Blog Post Page."
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 child_of = "Blog/blog"
 hide_crumb = 0
 crumb_title = ":slug"
 remove_crumb_trail = 0
 crumbElementTitle = "crumb-title"
 crumb_disabled = 0
+
+[SeoBlogPost]
+post = "post"
 ==
+<head>
+{% component 'SeoBlogPost' %}
+</head>
+
 <!-- Blog Post -->
 <blog id="layout-blog">
     {% partial 'blog/post' %}
