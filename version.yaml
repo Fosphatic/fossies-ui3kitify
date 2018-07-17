@@ -48,3 +48,6 @@
 1.3.0:
     - Added two new sections, for team presentation and office location
     - Smaller bugfixes and style changes
+1.3.1:
+    - Smaller visual bugfixes at team slider section
+    - Team member slogan is now visible only on big screens with min width 1280px+

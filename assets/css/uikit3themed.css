@@ -9753,6 +9753,21 @@ a:hover {
     padding: 10pt;
     background: #39f;
 }
+@media (max-width: 768px) {
+    #team .uk-icon-link.uk-margin-small-right.uk-icon {
+        color: rgb(51, 153, 255) !important;
+        border: 1px solid;
+        padding: 2pt;
+    }
+    #team .uk-icon-link.uk-margin-small-right.uk-icon:hover {
+        color: rgb(255, 255, 255) !important;
+        border: 1px solid #39f;
+        padding: 2pt;
+        background: #39f;
+    }
+}
+
+
 #team hr {
     color: #39f !important;
     border-top-color: rgb(51, 153, 255) !important;
