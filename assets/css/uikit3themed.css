@@ -3973,8 +3973,8 @@ ul.uk-nav-sub {
  * Dropbar modifier
  */
 .uk-navbar-dropdown-dropbar {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 10pt;
+  margin-bottom: 10pt;
   box-shadow: none; }
 
 /* Dropdown Nav
@@ -9817,9 +9817,10 @@ a:hover {
     outline: 0;
 }
 .team-title h2 {
-
     font-size: 40pt;
-
+}
+.maps-title h2 {
+    font-size: 40pt;
 }
 
 /* ========================================================================

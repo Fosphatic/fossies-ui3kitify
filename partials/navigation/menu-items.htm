@@ -2,8 +2,8 @@
 ==
 <ul class="{{ class }}">
     {% for item in items %}
-        <li class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? 'uk-parent' : '' }}" >
-            <a {% if item.items %}class="uk-nav uk-navbar-dropdown-nav" data-toggle="data-uk-dropdown"{% endif %} href="{{ item.url }}"> 
+        <li class="{{ item.isActive ? 'uk-active' : '' }} {{ item.isChildActive ? 'uk-parent' : '' }}">
+            <a {% if item.items %}class="" data-toggle=""{% endif %} href="{{ item.url }}"> 
                 
                 {{ item.title }} 
                 
@@ -12,10 +12,25 @@
          </li>
 
             {% if item.items %}
-             <div class="uk-navbar-dropdown">
-                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li> {% partial 'navigation/menu-items' items=item.items class='uk-child-item uk-nav-sub' %} </li>
-                 </ul>
+             <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1">
+                 <div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid>                    
+                     <div>
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-nav-header"><span uk-icon="menu"></span> {{ item.title }}</li>
+                            <li class="uk-nav-divider"></li>
+                            <li> {% partial 'navigation/menu-items' items=item.items class='uk-child-item' %} </li>
+                            <li class="uk-nav-divider"></li>
+                            
+                         </ul>                        
+                     </div>
+                     {% if subitem in item.items %}
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li> {% partial 'navigation/menu-items' items=subitem.items class='uk-parent' %} </li>                       
+                             </ul>                        
+                         </div>
+                     {% endif %}         
+                 </div>
              </div>
             {% endif %}
         
