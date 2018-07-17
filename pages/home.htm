@@ -138,6 +138,11 @@ code = "main-menu"
             {% partial 'site/team' %}
         </team>
         
+         <!-- Contact Us -->
+        <contact id="layout-contact">
+            {% partial 'site/contact' %}
+        </contact>
+        
         <!-- Footer -->
         <bottom id="layout-bottom">
             {% partial 'site/bottom' %}
@@ -151,5 +156,7 @@ code = "main-menu"
 {% scripts %}        
 <script src="{{ ('assets/js/uikit3.min.js')|theme }}?v={{ this.theme.version }}"></script>
 <script src="{{ ('assets/js/uikit3-icons.min.js')|theme }}?v={{ this.theme.version }}"></script>
+{% framework %}
+{% framework extras %}
 </body>
 </html>

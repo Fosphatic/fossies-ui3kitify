@@ -1,0 +1,10 @@
+[viewBag]
+==
+{% flash %}
+<div class="alert alert-{{ type }}">
+    <button type="uk-button uk-button-primary" class="close" data-dismiss="uk-alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    {{ message|raw }}
+</div>
+{% endflash %}

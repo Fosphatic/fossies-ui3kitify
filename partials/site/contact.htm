@@ -1,0 +1,27 @@
+[viewBag]
+
+[contactForm contactUIkitify]
+injectBootstrapAssets = 0
+==
+<section class="contact">
+  <div class="contact-wrap">
+    <div class="texture-overlay-showcase"></div>
+    <div class="uk-container">
+      <div class="uk-child-width-1-2 uk-grid">
+        <div class="uk-width-1-2">
+        
+        <div class="confirm-container">
+            <!--This will contain the confirmation when the email is successfully sent-->
+        </div>
+        
+        </div>
+        <div class="uk-width-1-2 contact-text-wrapper uk-contrast uk-visible@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <h2>Contact Us</h2>
+        {% component 'contactUIkitify' %}
+      </div>
+    </div>
+  </div>
+  
+{% framework %}
+{% framework extras %}
+</section>
