@@ -1,7 +1,9 @@
+[viewBag]
+==
 <form action="{{ __SELF__.searchPage | page }}?q={{ query | url_encode(true) }}" method="get">
     <div class="ss-search-form">
         <div class="ss-search-form__input">
-            <input name="q" type="text" placeholder="What are you looking for?" autocomplete="off"
+            <input name="q" type="text" placeholder="What are you looking for?" autocomplete="on"
                     {% if __SELF__.useAutoComplete %}
                         data-track-input
                         data-request="{{ __SELF__ }}::onType"

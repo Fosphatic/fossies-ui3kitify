@@ -14,6 +14,9 @@ crumb_disabled = 0
 
 [staticMenu kitifyMenu]
 code = "main-menu"
+
+[contactForm contactUIKitify]
+injectBootstrapAssets = 0
 ==
 <html lang="de">
 <head>
@@ -22,6 +25,12 @@ code = "main-menu"
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
     <meta name="robots" content="noindex,nofollow">
     <meta name="theme-color" content="{{ this.theme.brand_color }}">
+    <script src="{{ 'assets/js/detect.js'|theme }}"></script>
+    <script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+    <script src="{{ 'assets/js/uikit3.js'|theme }}"></script>
+    <script src="{{ 'assets/js/uikit3-icons.js'|theme }}"></script>
+    {% framework %}
+    {% framework extras %}
     <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">
     <link rel="stylesheet" href="{{ ('assets/css/uikit3.min.css')|theme }}?v={{ this.theme.version }}">
 </head>
@@ -143,7 +152,7 @@ code = "main-menu"
             {% partial 'site/contact' %}
         </contact>
         
-        <!-- Footer -->
+        <!-- Bottom -->
         <bottom id="layout-bottom">
             {% partial 'site/bottom' %}
         </bottom>
@@ -152,11 +161,5 @@ code = "main-menu"
         <footer id="layout-footer">
             {% partial 'site/footer' %}
         </footer>
- 
-{% scripts %}        
-<script src="{{ ('assets/js/uikit3.min.js')|theme }}?v={{ this.theme.version }}"></script>
-<script src="{{ ('assets/js/uikit3-icons.min.js')|theme }}?v={{ this.theme.version }}"></script>
-{% framework %}
-{% framework extras %}
 </body>
 </html>

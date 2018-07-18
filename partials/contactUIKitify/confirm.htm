@@ -1,7 +1,9 @@
+[viewBag]
+==
 {% if errorHappened %}
     {% partial __SELF__~'::flash-messages' %}
 {% else %}
-    <p>
+    <h2>
         {{confirmation_text|raw}}
-    </p>
+    </h2>
 {% endif %}
