@@ -9,30 +9,30 @@
       data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'" uk-grid>
 
     <div class="form-groups">
-        <div class="form-group uk-width-1-1 uk-margin">
-            <div class="uk-inline">
+        <div class="form-group uk-width-1-1@s uk-margin">
+            <div class="uk-inline tm-contact-form">
               <span class="uk-form-icon" uk-icon="icon: user"></span>
               <input class="uk-input uk-form-width-large" type="text" class="form-control" value=""  name="name" placeholder="{{name_input}}">
             </div>
         </div>
-        <div class="form-group uk-width-1-1 uk-margin">
-            <div class="uk-inline">
+        <div class="form-group uk-width-1-1@s uk-margin">
+            <div class="uk-inline tm-contact-form">
               <span class="uk-form-icon" uk-icon="icon: mail"></span>
               <input class="uk-input uk-form-width-large" type="text" class="form-control" value="" name="email" placeholder="{{email_input}}">
             </div>
         </div>
-        <div class="form-group uk-width-1-1 uk-margin">
-          <div class="uk-inline">
+        <div class="form-group uk-width-1-1@s uk-margin">
+          <div class="uk-inline tm-contact-form">
             <span class="uk-form-icon" uk-icon="icon:  hashtag"></span>
             <input class="uk-input uk-form-width-large" type="text" class="form-control" value="" name="subject" placeholder="{{subject_input}}">
         </div>
-        <div class="form-group uk-width-1-1 uk-margin">
-          <div class="uk-inline">
+        <div class="form-group uk-width-1-1@s uk-margin">
+          <div class="uk-inline tm-contact-form">
             <textarea class="form-control uk-textarea uk-form-width-large" value="" name="body" placeholder="{{message_input}}" rows="8"></textarea>
           </div>
         </div>
         {% if __SELF__.enableCaptcha %}
-            <div class="form-group uk-margin">
+            <div class="form-group uk-width-1-1@s uk-margin">
                 <div class="g-recaptcha" data-sitekey="{{ __SELF__.siteKey }}"></div>
             </div>
         {% endif %}
