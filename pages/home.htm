@@ -26,11 +26,11 @@ injectBootstrapAssets = 0
     <meta name="robots" content="noindex,nofollow">
     <meta name="theme-color" content="{{ this.theme.brand_color }}">
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
-    <script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
     <script src="{{ 'assets/js/uikit3.js'|theme }}"></script>
+    <script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
     <script src="{{ 'assets/js/uikit3-icons.js'|theme }}"></script>
-    {% framework %}
-    {% framework extras %}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {% framework%}
     <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">
     <link rel="stylesheet" href="{{ ('assets/css/uikit3.min.css')|theme }}?v={{ this.theme.version }}">
 </head>
@@ -161,5 +161,10 @@ injectBootstrapAssets = 0
         <footer id="layout-footer">
             {% partial 'site/footer' %}
         </footer>
+        
+    <script src="{{ 'assets/js/uikit3.js'|theme }}"></script>
+    <script src="{{ 'assets/js/uikit3-icons.js'|theme }}"></script>
+    
+    
 </body>
 </html>

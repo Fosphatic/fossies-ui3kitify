@@ -3,7 +3,5 @@
 {% if errorHappened %}
     {% partial __SELF__~'::flash-messages' %}
 {% else %}
-    <h2>
-        {{confirmation_text|raw}}
-    </h2>
+    {% partial "contactUIKitify/modal.htm" %}
 {% endif %}

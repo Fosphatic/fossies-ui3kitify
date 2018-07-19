@@ -3,6 +3,7 @@
 <div class="confirm-container">
     <!--This will contain the confirmation when the email is successfully sent-->
 </div>
+
 <form class="ContactUsForm uk-grid-large" role="form"
       data-request="{{ __SELF__ }}::onMailSent"
       data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'" uk-grid>
@@ -37,4 +38,5 @@
         {% endif %}
         <button type="submit" class="uk-button uk-button-primary btn btn-primary btn-lg pull-right uk-float-right uk-margin">{{send_button}}</button>
     </div>
+    
 </form>
