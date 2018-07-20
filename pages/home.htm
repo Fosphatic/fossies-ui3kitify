@@ -32,7 +32,9 @@ injectBootstrapAssets = 0
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     {% framework%}
     <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">
-    <link rel="stylesheet" href="{{ ('assets/css/uikit3.min.css')|theme }}?v={{ this.theme.version }}">
+    <link rel="stylesheet" href="{{ ('assets/css/uikit3.min.css')|theme }}">
+    <link rel="stylesheet" href="{{ ('assets/css/uikit3themed.css')|theme }}">
+    <link rel="stylesheet" href="{{ ('assets/css/banner.css')|theme }}">
 </head>
 <body class="uk-height-viewport">
 <div class="uk-section-header">
@@ -151,20 +153,20 @@ injectBootstrapAssets = 0
         <contact id="layout-contact">
             {% partial 'site/contact' %}
         </contact>
-        
+    
         <!-- Bottom -->
         <bottom id="layout-bottom">
             {% partial 'site/bottom' %}
-        </bottom>
-                        
+        </bottom>     
+                       
         <!-- Footer -->
         <footer id="layout-footer">
             {% partial 'site/footer' %}
         </footer>
         
+        
     <script src="{{ 'assets/js/uikit3.js'|theme }}"></script>
     <script src="{{ 'assets/js/uikit3-icons.js'|theme }}"></script>
-    
     
 </body>
 </html>

@@ -7,11 +7,21 @@ injectBootstrapAssets = 0
   <div class="contact-wrap">
     <div class="texture-overlay-showcase"></div>
     <div class="uk-container">
-      <div class="uk-child-width-1-2 uk-grid">
-        <div class="uk-width-1-1@s uk-width-1-2@m">
+      <div class="uk-child-width1-1 uk-child-width-1-2@s uk-grid">
+        <div class="contact-text-wrapper uk-contrast"  uk-scrollspy="cls:uk-animation-slide-bottom-medium; delay: 350; repeat: true">
+        <h2>UIkitify Enterprises</h2>
+        <ul class="uk-list uk-contrast uk-text-mod">
+            <li class"uk-contrast"><span class="uk-margin-small-right" uk-icon="icon: location; ratio: 2"></span>Alsenstraße 46, 33330 Gütersloh</li>
+            <hr class="uk-divider-small" uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 1000; repeat: true">
+            <li><span class="uk-margin-small-right" uk-icon="icon: phone; ratio: 2"></span>+49 173 111 222 0</li>
+            <hr class="uk-divider-small" uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 1100; repeat: true">
+            <li><span class="uk-margin-small-right" uk-icon="icon: mail; ratio: 2"></span> info@uikitify-enterprises.de</li>
+            <hr class="uk-divider-small" uk-scrollspy="cls:uk-animation-slide-left-medium; delay: 1200; repeat: true">
+            <li><span class="uk-margin-small-right" uk-icon="icon: world; ratio: 2"></span> https://www.uikitify-enterprises.de</li>
+        </ul>
             
         </div>
-        <div class="uk-width1-1@s uk-width-1-2@m contact-text-wrapper uk-contrast tm-contact-wrapper" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <div class="contact-text-wrapper uk-contrast tm-contact-wrapper" uk-scrollspy="cls:uk-animation-slide-bottom-medium; delay: 450; repeat: true">
         <h2>Contact Us</h2>
         {% component 'contactUIKitify' %}
       </div>

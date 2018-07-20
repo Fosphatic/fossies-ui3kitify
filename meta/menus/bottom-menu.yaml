@@ -8,6 +8,6 @@ items:
         reference: bottom-menu
         replace: '1'
         viewBag:
-            isHidden: '0'
+            isHidden: '1'
             cssClass: ''
             isExternal: '0'

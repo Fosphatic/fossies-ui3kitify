@@ -64,3 +64,6 @@
     - Mail send confirmation is now UIKitified and use the uk-modal component
 1.3.6:
     - Bugfix the responsive layout of the contact form
+1.3.7:
+    - Added company info div beside the contact form
+    - Several bugfixes, especially the contact form visual appearience on several additional devices should be fixed now

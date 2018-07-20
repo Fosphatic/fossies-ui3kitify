@@ -1,7 +1,7 @@
 [viewBag]
 ==
 {% if errorHappened %}
-    {% partial __SELF__~'::flash-messages' %}
+    {% partial "contactUIKitify/flash-messages.htm" %}
 {% else %}
     {% partial "contactUIKitify/modal.htm" %}
 {% endif %}
