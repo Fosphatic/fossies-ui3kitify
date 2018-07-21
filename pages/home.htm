@@ -4,9 +4,6 @@ layout = "home"
 meta_title = "UIkitify Theme"
 meta_description = "UI3kitify Theme for october CMS. Awesome features, easy to customize."
 is_hidden = 0
-seo_keywords = "october cms, theme, uikit, blog"
-robot_index = "index"
-robot_follow = "follow"
 child_of = "mey_no_parent"
 hide_crumb = 0
 remove_crumb_trail = 0
@@ -21,10 +18,17 @@ injectBootstrapAssets = 0
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>{{ this.page.title }} | {{ this.theme.site_name }}</title>
+    <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
+    <meta name="description" content="{{ this.page.meta_description}}">
+    <meta name="keywords" content="{{ this.page.meta_keywords}}">
+    <link rel="canonical" href="{{ this.page.url }}"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="index,follow">
     <meta name="theme-color" content="{{ this.theme.brand_color }}">
+    <meta property="og:title" content="{{ this.page.title }}" />
+    <meta property="og:url" content="{{ this.page.url }}" />
+    <meta property="og:site_name" content="{{ this.theme.site_name }}" />
+    <meta property="og:description" content="{{ this.page.settings.meta_description }}" />
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
     <script src="{{ 'assets/js/uikit3.js'|theme }}"></script>
     <script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>

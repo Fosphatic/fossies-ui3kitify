@@ -3366,7 +3366,7 @@ select.uk-form-width-xsmall {
   width: 100%;
   /* 9 */
   border: none;
-  color: #666; }
+  color: #000; }
 
 .uk-search-input:focus {
   outline: none; }

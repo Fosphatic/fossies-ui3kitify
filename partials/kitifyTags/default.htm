@@ -2,6 +2,6 @@
 ==
 <ul>
 {% for tag in __SELF__.tags %}
-    {{ tag.name }}
+{{ tag.name|raw }}
 {% endfor %}
 </ul>
