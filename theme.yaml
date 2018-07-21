@@ -11,5 +11,4 @@ require:
     - Mey.Breadcrumbs
     - Bedard.BlogTags
     - OFFLINE.SiteSearch
-    - AnandPatel.SeoExtension
     - DevINX.ContactUs
