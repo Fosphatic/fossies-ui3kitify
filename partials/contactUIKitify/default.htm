@@ -31,6 +31,12 @@
             <textarea class="form-control uk-textarea uk-form-width-large" value="" name="body" placeholder="{{message_input}}" rows="8"></textarea>
           </div>
         </div>
+        <!--Edit this devision to your need for the gdpr compliance of the contact form on your homepage-->
+        <div class="form-group uk-width-1-1@s uk-margin">
+            <div class="uk-inline tm-contact-form gdpr_agree uk-form-width-large">
+            <input class="uk-checkbox uk-margin-small-right" style="border: 1px solid #FFFFFF" type="checkbox" name="gdpr_agree" required="required" />I agree to my personal data being stored and used according to the <a href="/privacy-policy">privacy policy</a> and <a href="/terms-of-use">terms of use </a> declarations.
+            </div>
+        </div>
         {% if __SELF__.enableCaptcha %}
             <div class="form-group uk-width-1-1@s uk-margin">
                 <div class="g-recaptcha" data-sitekey="{{ __SELF__.siteKey }}"></div>
