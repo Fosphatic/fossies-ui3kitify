@@ -101,7 +101,7 @@ injectBootstrapAssets = 0
         
 </div>
     <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
-        <div class="uk-offcanvas-bar  tm-home-offcanvas">
+        <div class="uk-offcanvas-bar tm-home-offcanvas">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
@@ -120,7 +120,7 @@ injectBootstrapAssets = 0
     </div>
 </div>
         <!-- Content -->
-        <home id="layout-features">
+        <home id="layout-home">
             {% partial 'site/home' %}
         </home>
         
@@ -163,10 +163,8 @@ injectBootstrapAssets = 0
         <footer id="layout-footer">
             {% partial 'site/footer' %}
         </footer>
-        
-        
+              
     <script src="{{ 'assets/js/uikit3.js'|theme }}"></script>
-    <script src="{{ 'assets/js/uikit3-icons.js'|theme }}"></script>
-    
+    <script src="{{ 'assets/js/uikit3-icons.js'|theme }}"></script>    
 </body>
 </html>

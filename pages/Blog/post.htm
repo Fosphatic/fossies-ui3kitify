@@ -1,10 +1,7 @@
 title = "Blog Post"
 url = "/blog/post/:slug"
-layout = "blog"
 description = "Blog Post Page."
 is_hidden = 0
-robot_index = "index"
-robot_follow = "follow"
 child_of = "Blog/blog"
 hide_crumb = 0
 crumb_title = ":slug"
@@ -12,14 +9,68 @@ remove_crumb_trail = 0
 crumbElementTitle = "crumb-title"
 crumb_disabled = 0
 
-[SeoBlogPost]
-post = "post"
+[blogPost postView]
+slug = "{{ :slug }}"
+categoryPage = "Blog/category"
 ==
+<!DOCTYPE html>
+<html lang="de" class="no-js" dir="ltr">
 <head>
-{% component 'SeoBlogPost' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    
+    <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
+    <meta name="description" content="{{ this.page.meta_description}}">
+    <meta name="keywords" content="{{ this.page.meta_keywords}}">
+    
+    <link rel="canonical" href="{{ ''|page }}">
+    {% placeholder head %}
+    {% component 'SeoBlogPost' data=post %}
+    <!-- Theming / branding -->
+    <meta name="theme-color" content="{{ this.theme.brand_color }}">
+    <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">
+    <script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+    <script src="{{ 'assets/js/detect.js'|theme }}"></script>
+    <link rel="stylesheet" href="{{ 'assets/css/uikit3themed.css'|theme }}?v={{ this.theme.version }}">
+    
+    {% styles %}
 </head>
+   
 
-<!-- Blog Post -->
-<blog id="layout-blog">
-    {% partial 'blog/post' %}
-</blog>
+<body>
+        <!-- Header -->
+    <header id="layout-header">
+        {% partial 'site/header' %}
+    </header>
+        <!-- Breadcrumbs -->
+    <breadcrumbs id="layout-breadcrumbs">
+        {% partial 'site/breadcrumbs' %}
+    </breadcrumbs>
+    
+    
+        <!-- Blog Post -->
+    <blog id="layout-blog">
+        {% partial 'blog/post' %}
+    </blog>
+
+        <!-- Blog Content -->
+    <blog id="layout-posts">
+        {% page %}
+    </blog>
+
+        <!-- Footer -->
+    <bottom id="layout-bottom">
+        {% partial 'site/bottom' %}
+    </bottom>
+                    
+    <!-- Footer -->
+    <footer id="layout-footer">
+        {% partial 'site/footer' %}
+    </footer>
+
+    <script src="{{ 'assets/js/uikit3.js'|theme }}?v={{ this.theme.version }}"></script>
+    <script src="{{ 'assets/js/uikit3-icons.js'|theme }}?v={{ this.theme.version }}"></script>
+    {% scripts %}
+</body>
+</html>

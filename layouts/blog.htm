@@ -1,18 +1,18 @@
 description = "Default Blog layout"
-
-[SeoBlogPost]
-post = "post"
 ==
 <!DOCTYPE html>
 <html lang="de" class="no-js" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex,nofollow">
-    {% component 'SeoBlogPost' %}
+    <meta name="robots" content="index,follow">
+    
     <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
+    <meta name="description" content="{{ this.page.meta_description}}">
+    <meta name="keywords" content="{{ this.page.meta_keywords}}">
     <link rel="canonical" href="{{ ''|page }}">
-
+    {% placeholder head %}
+    {% component 'SeoBlogPost' data=post %}
     <!-- Theming / branding -->
     <meta name="theme-color" content="{{ this.theme.brand_color }}">
     <link rel="shortcut icon" href="{{ 'assets/images/uikit/icon.png'|theme }}">

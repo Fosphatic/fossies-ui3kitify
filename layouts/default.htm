@@ -3,8 +3,6 @@ description = "Default Page Layout"
 [staticPage]
 useContent = 1
 default = 0
-
-[SeoStaticPage]
 ==
 <!DOCTYPE html>
 <html lang="de" class="no-js" dir="ltr">
@@ -13,6 +11,8 @@ default = 0
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow">
     <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
+    <meta name="description" content="{{ this.page.meta_description}}">
+    <meta name="keywords" content="{{ this.page.meta_keywords}}">
     <link rel="canonical" href="{{ ''|page }}">
 
     <!-- Theming / branding -->
@@ -23,7 +23,7 @@ default = 0
     <link rel="stylesheet" href="{{ 'assets/css/uikit3themed.css'|theme }}?v={{ this.theme.version }}">
     {% styles %}
     
-    {% component 'SeoStaticPage' %}
+    
 </head>
 
 <body>

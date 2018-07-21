@@ -9363,7 +9363,7 @@ blockquote p {
     color: #39f !important;
     text-decoration: none;
 }
-.uk-offcanvas-bar {
+.uk-offcanvas-bar-mod {
     background: rgb(255,255,255,0.95);
 }
 .uk-offcanvas-close {
@@ -9432,10 +9432,10 @@ blockquote p {
     color: #000 !important;
 }
 
-.uk-offcanvas-bar-animation {
-    transition: -webkit-transform 1.5s ease-out;
-    transition: transform 1.5s ease-out;
-    transition: transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+.uk-offcanvas-bar-animation-mod {
+    transition: -webkit-transform 1s ease-out;
+    transition: transform 1s ease-out;
+    transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 /* ========================================================================
@@ -9674,7 +9674,7 @@ a:hover {
 #layout-header .uk-child-item a:hover, #layout-header .uk-child-item .uk-active a  {
     color: #39f !important;
 }
-.uk-text-contrast {
+#layout-sidebar .uk-text-contrast {
     color: #FFF; }
 
 .maps {
