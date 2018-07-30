@@ -69,3 +69,5 @@
     - Several bugfixes, especially the contact form visual appearience on several additional devices should be fixed now
 1.4.0:
     - Several fixes and cleaning, added correct meta data handling coming from meta or seo tabs
+1.4.1:
+    - Upgraded the UIKit V3 Framework to RC10
